@@ -615,6 +615,10 @@ body{
 }
 
 @media only screen and (max-width: 530px) {
+    #eixo .eco-4{
+        display: none;
+    }
+
     #eixo .eco-5{
         display: none;
     }
