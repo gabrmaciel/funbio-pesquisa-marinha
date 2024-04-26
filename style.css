@@ -1,11 +1,17 @@
 @font-face {
-    font-family: Strawford;
+    font-family: 'Strawford';
     src: url(Strawford-Regular.otf);
 }
 
 @font-face {
-    font-family: Strawford;
+    font-family: 'Strawford';
     src: url(Strawford-RegularItalic.otf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(Open-Sans.ttf);
     font-style: italic;
 }
 
