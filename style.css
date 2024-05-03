@@ -344,6 +344,8 @@ body{
     padding-top: 1px;
     background: #FFF;
     border-radius: 0px;
+    -webkit-appearance: none;
+	appearance: none;
 }
 
 #filtrar .filtrar-titulo-select-select{
