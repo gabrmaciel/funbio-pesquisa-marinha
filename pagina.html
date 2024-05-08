@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu">
+        <div class="fechar" onclick="fechar()"></div>
+        
+        <div class="menu">
+            <div class="sub-menu">
+                <div class="sub-menu-ul" id="sub-1">
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num">1</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                </div>
+                <div class="sub-menu-ul" id="sub-2">
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num">2</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                </div>
+                <div class="sub-menu-ul" id="sub-3">
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num">3</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                </div>
+                <div class="sub-menu-ul" id="sub-4">
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num">4</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                </div>
+                <div class="sub-menu-ul" id="sub-5">
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num">5</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                </div>
+            </div>
+            <div class="menu-ul" id="ul-1">
+                <div class="menu-ul-subtitulo">EIXO #1</div>
+                <div class="menu-ul-titulo">PESCA</div>
+            </div>
+            <div class="menu-ul" id="ul-2">
+                <div class="menu-ul-subtitulo">EIXO #2</div>
+                <div class="menu-ul-titulo">SOCIOAMBIENTAL</div>
+            </div>
+            <div class="menu-ul" id="ul-3">
+                <div class="menu-ul-subtitulo">EIXO #3</div>
+                <div class="menu-ul-titulo">ECOLOGIA E BIOLOGIA</div>
+            </div>
+            <div class="menu-ul" id="ul-4">
+                <div class="menu-ul-subtitulo">EIXO #4</div>
+                <div class="menu-ul-titulo">POLÍTICAS PÚBLICAS</div>
+            </div>
+            <div class="menu-ul" id="ul-5">
+                <div class="menu-ul-subtitulo">EIXO #5</div>
+                <div class="menu-ul-titulo">SAÚDE ÚNICA</div>
+            </div>
+        </div>
+        <div class="menu-mobile">
+            <div class="menu-mobile-ul">
+                <div class="menu-ul-top" onclick="abreFechaMenu(1)">
+                    <div class="menu-ul-top-titulo">EIXO #1</div>
+                    <div class="menu-ul-top-subtitulo">PESCA
+                        <img src="img/arrow-down.png" alt="">
+                    </div>
+                </div>
+                <div class="menu-submenu" id="menu-submenu-1">
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">1</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">2</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">3</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">4</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                </div>
+            </div>
+            <div class="menu-mobile-ul">
+                <div class="menu-ul-top" onclick="abreFechaMenu(2)">
+                    <div class="menu-ul-top-titulo">EIXO #2</div>
+                    <div class="menu-ul-top-subtitulo">SOCIOAMBIENTAL
+                        <img src="img/arrow-down.png" alt="">
+                    </div>
+                </div>
+                <div class="menu-submenu" id="menu-submenu-2">
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">1</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">2</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">3</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">4</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                </div>
+            </div>
+            <div class="menu-mobile-ul">
+                <div class="menu-ul-top" onclick="abreFechaMenu(3)">
+                    <div class="menu-ul-top-titulo">EIXO #3</div>
+                    <div class="menu-ul-top-subtitulo">ECOLOGIA E BIOLOGIA
+                        <img src="img/arrow-down.png" alt="">
+                    </div>
+                </div>
+                <div class="menu-submenu" id="menu-submenu-3">
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">1</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">2</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">3</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">4</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                </div>
+            </div>
+            <div class="menu-mobile-ul">
+                <div class="menu-ul-top" onclick="abreFechaMenu(4)">
+                    <div class="menu-ul-top-titulo">EIXO #4</div>
+                    <div class="menu-ul-top-subtitulo">POLÍTICAS PÚBLICAS
+                        <img src="img/arrow-down.png" alt="">
+                    </div>
+                </div>
+                <div class="menu-submenu" id="menu-submenu-4">
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">1</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">2</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">3</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">4</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                </div>
+            </div>
+            <div class="menu-mobile-ul">
+                <div class="menu-ul-top" onclick="abreFechaMenu(5)">
+                    <div class="menu-ul-top-titulo">EIXO #5</div>
+                    <div class="menu-ul-top-subtitulo">SAÚDE ÚNICA
+                        <img src="img/arrow-down.png" alt="">
+                    </div>
+                </div>
+                <div class="menu-submenu" id="menu-submenu-5">
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">1</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">2</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">3</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    <div class="sub-menu-ul-numeros">
+                        <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">4</div>
+                        <div class="sub-ul-numeros-linha"></div>
+                    </div>
+                    <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <div class="body-inner-div">
+            <div class="body-inner-div-header">
+                <a href="index.html"><img src="img/logo.png" class="header-img"></a>
+                <div class="header-icons">
+                    <div class="header-icons-share compartilhar"></div>
+                    <div class="header-icons-share share" onclick="abrir()"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="background">
+        <div class="bg"></div>
+        <div class="body-inner-div">
+            <div class="titulos">
+                <div class="titulos-nome">NOME DO EIXO</div>
+                <div class="titulos-espaco">&nbsp;</div>
+                <div class="titulos-banco">BANCO DE DADOS GERADOS</div>
+                <div class="titulos-espaco">&nbsp;</div>
+                <div class="titulos-texto"><b>Texto contextualizando |</b> Sob alto risco de desaparecerem da natureza, as toninhas são animais fundamentais para a preservação do litoral do Brasil, do Uruguai e da Argentina.</div>
+            </div>
+        </div>
+    </div>
+    <div id="topico">
+        <div class="body-inner-div">
+            <div class="topico-div">
+                <div class="topico-div-titulo">
+                    <div class="topico-div-titulo-span">Visão Geral</div>
+                    <div class="topico-div-titulo-abre-fecha" id="topico-abre-fecha-corpo-1">
+                        <div class="topico-div-titulo-abre-fecha-maior-menor" id="topico-abre-fecha-1" onclick="abre_fecha(1)">
+                            <div class="topico-maior-menor" id="topico-maior-menor-1">+</div>
+                        </div>
+                        <div class="topico-fecha" id="topico-fecha-1" onclick="fecha(1)"></div>
+                    </div>
+                </div>
+                <div class="topico-div-corpo" id="topico-corpo-1">
+                    <div class="topico-div-corpo-titulo">Ações conservadas para as unidades de conservação</div>
+                    <div class="topico-div-corpo-texto">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non arcu urna. Praesent dapibus interdum tortor, hendrerit gravida sapien fringilla id. Mauris luctus est vitae mi luctus mattis. Proin aliquet mattis convallis. Duis imperdiet augue lorem, sed eleifend nisi semper posuere. Vivamus eleifend posuere tristique. Nullam porttitor porttitor nisi, ac lobortis diam blandit eu. Sed pretium erat id ultricies dapibus. Proin ut pharetra mauris. Sed ultrices quam leo, sit amet congue urna sodales ut. Praesent ornare malesuada urna. Maecenas tristique a dui id gravida. Ut eu risus varius massa dapibus tristique ut non ligula. </span>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non arcu urna. Praesent dapibus interdum tortor, hendrerit gravida sapien fringilla id. Mauris luctus est vitae mi luctus mattis. Proin aliquet mattis convallis. Duis imperdiet augue lorem, sed eleifend nisi semper posuere. Vivamus eleifend posuere tristique. Nullam porttitor porttitor nisi, ac lobortis diam blandit eu. Sed pretium erat id ultricies dapibus. Proin ut pharetra mauris. Sed ultrices quam leo, sit amet congue urna sodales ut. Praesent ornare malesuada urna. Maecenas tristique a dui id gravida. Ut eu risus varius massa dapibus tristique ut non ligula. </span>
+                    </div>
+                </div>
+            </div>
+            <div class="topico-div">
+                <div class="topico-div-titulo">
+                    <div class="topico-div-titulo-span">Principais achados</div>
+                    <div class="topico-div-titulo-abre-fecha" id="topico-abre-fecha-corpo-2">
+                        <div class="topico-div-titulo-abre-fecha-maior-menor" id="topico-abre-fecha-2" onclick="abre_fecha(2)">
+                            <div class="topico-maior-menor" id="topico-maior-menor-2">+</div>
+                        </div>
+                        <div class="topico-fecha" id="topico-fecha-2" onclick="fecha(2)"></div>
+                    </div>
+                </div>
+                <div class="topico-div-corpo" id="topico-corpo-2">
+                    <div class="topico-div-corpo-titulo">Ações conservadas para as unidades de conservação</div>
+                    <div class="topico-div-corpo-texto">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non arcu urna. Praesent dapibus interdum tortor, hendrerit gravida sapien fringilla id. Mauris luctus est vitae mi luctus mattis. Proin aliquet mattis convallis. Duis imperdiet augue lorem, sed eleifend nisi semper posuere. Vivamus eleifend posuere tristique. Nullam porttitor porttitor nisi, ac lobortis diam blandit eu. Sed pretium erat id ultricies dapibus. Proin ut pharetra mauris. Sed ultrices quam leo, sit amet congue urna sodales ut. Praesent ornare malesuada urna. Maecenas tristique a dui id gravida. Ut eu risus varius massa dapibus tristique ut non ligula. </span>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non arcu urna. Praesent dapibus interdum tortor, hendrerit gravida sapien fringilla id. Mauris luctus est vitae mi luctus mattis. Proin aliquet mattis convallis. Duis imperdiet augue lorem, sed eleifend nisi semper posuere. Vivamus eleifend posuere tristique. Nullam porttitor porttitor nisi, ac lobortis diam blandit eu. Sed pretium erat id ultricies dapibus. Proin ut pharetra mauris. Sed ultrices quam leo, sit amet congue urna sodales ut. Praesent ornare malesuada urna. Maecenas tristique a dui id gravida. Ut eu risus varius massa dapibus tristique ut non ligula. </span>
+                    </div>
+                </div>
+            </div>
+            <div class="topico-div">
+                <div class="topico-div-titulo">
+                    <div class="topico-div-titulo-span">Objetivos alcançados</div>
+                    <div class="topico-div-titulo-abre-fecha" id="topico-abre-fecha-corpo-3">
+                        <div class="topico-div-titulo-abre-fecha-maior-menor" id="topico-abre-fecha-3" onclick="abre_fecha(3)">
+                            <div class="topico-maior-menor" id="topico-maior-menor-3">+</div>
+                            
+                        </div>
+                        <div class="topico-fecha" id="topico-fecha-3" onclick="fecha(3)"></div>
+                    </div>
+                </div>
+                <div class="topico-div-corpo" id="topico-corpo-3">
+                    <div class="topico-div-corpo-titulo">Ações conservadas para as unidades de conservação</div>
+                    <div class="topico-div-corpo-texto">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non arcu urna. Praesent dapibus interdum tortor, hendrerit gravida sapien fringilla id. Mauris luctus est vitae mi luctus mattis. Proin aliquet mattis convallis. Duis imperdiet augue lorem, sed eleifend nisi semper posuere. Vivamus eleifend posuere tristique. Nullam porttitor porttitor nisi, ac lobortis diam blandit eu. Sed pretium erat id ultricies dapibus. Proin ut pharetra mauris. Sed ultrices quam leo, sit amet congue urna sodales ut. Praesent ornare malesuada urna. Maecenas tristique a dui id gravida. Ut eu risus varius massa dapibus tristique ut non ligula. </span>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non arcu urna. Praesent dapibus interdum tortor, hendrerit gravida sapien fringilla id. Mauris luctus est vitae mi luctus mattis. Proin aliquet mattis convallis. Duis imperdiet augue lorem, sed eleifend nisi semper posuere. Vivamus eleifend posuere tristique. Nullam porttitor porttitor nisi, ac lobortis diam blandit eu. Sed pretium erat id ultricies dapibus. Proin ut pharetra mauris. Sed ultrices quam leo, sit amet congue urna sodales ut. Praesent ornare malesuada urna. Maecenas tristique a dui id gravida. Ut eu risus varius massa dapibus tristique ut non ligula. </span>
+                    </div>
+                </div>
+            </div>
+            <div class="topico-div">
+                <div class="topico-div-titulo">
+                    <div class="topico-div-titulo-span">Entregas e resultados</div>
+                    <div class="topico-div-titulo-abre-fecha" id="topico-abre-fecha-corpo-4">
+                        <div class="topico-div-titulo-abre-fecha-maior-menor" id="topico-abre-fecha-4" onclick="abre_fecha(4)">
+                            <div class="topico-maior-menor" id="topico-maior-menor-4">+</div> 
+                        </div>
+                        <div class="topico-fecha" id="topico-fecha-4" onclick="fecha(4)"></div>
+                    </div>
+                </div>
+                <div class="topico-div-corpo" id="topico-corpo-4">
+                    <div class="topico-entrega">
+                        <div class="topico-entrega-corpo">
+                            <span class="topico-entrega-topo">Entregas e Resultados</span>
+                            <div class="topico-entrega-ver">VER O SITE</div>
+                        </div>
+                    </div>
+                    <div class="topico-entrega">
+                        <div class="topico-entrega-corpo">
+                            <span class="topico-entrega-topo">Entregas e Resultados</span>
+                            <div class="topico-entrega-ver">VER O SITE</div>
+                        </div>
+                    </div>
+                    <div class="topico-entrega">
+                        <div class="topico-entrega-corpo">
+                            <span class="topico-entrega-topo">Entregas e Resultados</span>
+                            <div class="topico-entrega-ver">VER O SITE</div>
+                        </div>
+                    </div>
+                    <div class="topico-entrega">
+                        <div class="topico-entrega-corpo">
+                            <span class="topico-entrega-topo">Entregas e Resultados</span>
+                            <div class="topico-entrega-ver">VER O SITE</div>
+                        </div>
+                    </div>
+                    <div class="topico-entrega">
+                        <div class="topico-entrega-corpo">
+                            <span class="topico-entrega-topo">Entregas e Resultados</span>
+                            <div class="topico-entrega-ver">VER O SITE</div>
+                        </div>
+                    </div>
+                    <div class="topico-entrega">
+                        <div class="topico-entrega-corpo">
+                            <span class="topico-entrega-topo">Entregas e Resultados</span>
+                            <div class="topico-entrega-ver">VER O SITE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projeto">
+        <div class="body-inner-div">
+            <a href="pagina.html"><div class="projeto-proximo">PRÓXIMO PROJETO</div></a>
+            <a href="index.html"><div class="projeto-voltar">VOLTAR PARA A LISTA</div></a>
+        </div>
+    </div>
+   
+    <div id="rodape">
+        <div class="body-inner-div">
+            <div class="rodape-site-mobile">
+                <span>A realização do Projeto Pesquisa Marinha e Pesqueira é uma medida compensatória estabelecida pelo Termo de Ajustamento de Conduta de responsabilidade da empresa PRIO, conduzido pelo Ministério Público Federal – MPF/RJ.</span>
+                <div class="rodape-site-datadot rodape-site-datadot-mobile">Um site <a class="datadot-a-mobile" href="https://datadotestudio.com/" target="_blank">datadot</a></div>
+            </div>
+            <div class="rodape-logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="rodape-alga">
+                <img src="img/alga.png" alt="">
+            </div>
+            <div class="rodape-site">
+                <span>A realização do Projeto Pesquisa Marinha e Pesqueira é uma medida compensatória estabelecida pelo Termo de Ajustamento de Conduta de responsabilidade da empresa PRIO, conduzido pelo Ministério Público Federal – MPF/RJ.</span>
+                <div class="rodape-site-datadot">Um site <a href="https://datadotestudio.com/" target="_blank">datadot</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="rodape-mobile">
+        <div class="body-inner-div">
+            <div class="rodape-mobile-coral">
+                <div class="rodape-mobile-coral-linha">&nbsp;</div>
+                <img src="img/alga-mobile.png" alt="" srcset="">
+            </div>
+            <div class="rodape-mobile-logo">
+                <img src="img/pesquisa-marinha.png" alt="" srcset="">
+            </div>
+            <div class="rodape-mobile-text">
+                <span>A realização do Projeto Pesquisa Marinha e Pesqueira é uma medida compensatória estabelecida pelo Termo de Ajustamento de Conduta de responsabilidade da empresa PRIO, conduzido pelo Ministério Público Federal – MPF/RJ.</span>
+            </div>
+            <div class="rodape-mobile-datadot">
+                <span>um site <a href="https://datadotestudio.com/" target="_blank" class="rodape-mobile-datadot-a">datadot</a></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function abre_fecha(id){
+            $(".topico-div-corpo").css("display", "none")
+            $(".topico-maior-menor").html("+")
+            $(".topico-div-titulo-abre-fecha-maior-menor").removeClass("topico-abre-fecha-laranja")
+            $(".topico-div-titulo-abre-fecha").removeClass("topico-abre-fecha-laranja-corpo")
+            $(".topico-fecha").css("display", "none")
+
+            $("#topico-corpo-"+id).css("display", "block")
+            $("#topico-maior-menor-"+id).html("-")
+            $("#topico-abre-fecha-"+id).addClass("topico-abre-fecha-laranja");
+            $("#topico-abre-fecha-corpo-"+id).addClass("topico-abre-fecha-laranja-corpo")
+            $("#topico-fecha-"+id).css("display", "block")
+        }
+
+        function fecha(id){
+            $("#topico-corpo-"+id).css("display", "none")    
+            $("#topico-maior-menor-"+id).html("+")
+            $("#topico-abre-fecha-"+id).removeClass("topico-abre-fecha-laranja");
+            $("#topico-abre-fecha-corpo-"+id).removeClass("topico-abre-fecha-laranja-corpo") 
+            $("#topico-fecha-"+id).css("display", "none")   
+        }
+
+        $("#ul-1").hover(function(){
+            $(".sub-menu").css("opacity", "1");
+            $("#ul-2").css("opacity", "0.2");
+            $("#ul-3").css("opacity", "0.2");
+            $("#ul-4").css("opacity", "0.2");
+            $("#ul-5").css("opacity", "0.2");
+        }, function(){
+            $(".sub-menu").css("opacity", "0");
+            $(".menu-ul").css("opacity", "1");
+        });
+        $("#ul-2").hover(function(){
+            $(".sub-menu").css("opacity", "1");
+            $("#ul-1").css("opacity", "0.2");
+            $("#ul-3").css("opacity", "0.2");
+            $("#ul-4").css("opacity", "0.2");
+            $("#ul-5").css("opacity", "0.2");
+        }, function(){
+            $(".sub-menu").css("opacity", "0");
+            $(".menu-ul").css("opacity", "1");
+        });
+        $("#ul-3").hover(function(){
+            $(".sub-menu").css("opacity", "1");
+            $("#ul-1").css("opacity", "0.2");
+            $("#ul-2").css("opacity", "0.2");
+            $("#ul-4").css("opacity", "0.2");
+            $("#ul-5").css("opacity", "0.2");
+        }, function(){
+            $(".sub-menu").css("opacity", "0");
+            $(".menu-ul").css("opacity", "1");
+        });
+        $("#ul-4").hover(function(){
+            $(".sub-menu").css("opacity", "1");
+            $("#ul-1").css("opacity", "0.2");
+            $("#ul-2").css("opacity", "0.2");
+            $("#ul-3").css("opacity", "0.2");
+            $("#ul-5").css("opacity", "0.2");
+        }, function(){
+            $(".sub-menu").css("opacity", "0");
+            $(".menu-ul").css("opacity", "1");
+        });
+        $("#ul-5").hover(function(){
+            $(".sub-menu").css("opacity", "1");
+            $("#ul-1").css("opacity", "0.2");
+            $("#ul-2").css("opacity", "0.2");
+            $("#ul-3").css("opacity", "0.2");
+            $("#ul-4").css("opacity", "0.2");
+        }, function(){
+            $(".sub-menu").css("opacity", "0");
+            $(".menu-ul").css("opacity", "1");
+        });
+        $("#ul-1").hover(function(){
+            $(".sub-menu").css("opacity", "1");
+            $("#ul-2").css("opacity", "0.2");
+            $("#ul-3").css("opacity", "0.2");
+            $("#ul-4").css("opacity", "0.2");
+            $("#ul-5").css("opacity", "0.2");
+        }, function(){
+            $(".sub-menu").css("opacity", "0");
+            $(".menu-ul").css("opacity", "1");
+        });
+
+        function fechar(){
+            $("#menu").css("display", "none");
+            $("html, body").css("overflow", "auto")
+        }
+
+        function abrir(){
+            $("#menu").css("display", "block");
+            $("html, body").css("overflow", "hidden")
+        }
+
+        function abreFechaMenu(id){
+            if($("#menu-submenu-"+id).css("display") == "block"){
+                $("#menu-submenu-"+id).css("display", "none");
+            }else{
+                $(".menu-submenu").css("display", "none");
+                $("#menu-submenu-"+id).css("display", "block");
+            }
+        }
+    </script>
+</body>
+</html>

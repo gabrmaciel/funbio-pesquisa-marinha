@@ -94,8 +94,16 @@ body{
 .menu-submenu{
     float: left;
     width: 80%;
-    margin: 40px 0;
-    display: none;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.menu-submenu-corpo{
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+    padding-bottom: 0px
 }
 
 .menu-ul-top-titulo{
@@ -123,7 +131,19 @@ body{
 #menu .menu-ul{
     float: left;
     width: 100%;
-    position: relative;
+    cursor: pointer;
+}
+
+#menu .menu-ul-topo{
+    float: left;
+    width: 100%;
+}
+
+.menu-ul-fechar{
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    display: none;
     cursor: pointer;
 }
 
@@ -140,7 +160,8 @@ body{
 
 #menu .sub-menu{
     position: absolute;
-    left: 55%;
+    top: 20%;
+        left: 55%;
     opacity: 0;
 }
 
@@ -432,6 +453,14 @@ body{
     background-image: url('img/eixo-bg.png');
     background-size: cover;
     background-position: center center;
+    transition: 0.5s;
+    background-size: 105% !important;
+    cursor: pointer;
+}
+
+#eixo .eixo-div:hover .eixo-div-img{
+    background-size: 125% !important;
+
 }
 
 #eixo .eixo-div-nome{
@@ -455,6 +484,7 @@ body{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    min-height: 52px;
 }
 
 #eixo .eixo-div-biodiversidade{
@@ -487,6 +517,26 @@ body{
     color: #CEF077;
     position: relative;
     z-index: 2;
+}
+
+#eixo .eixo-ecossistemas-titulo-eco-pesca{
+    background-color: #1B3014;
+}
+
+#eixo .eixo-ecossistemas-titulo-eco-socioambiental{
+    background-color: #36421B;
+}
+
+#eixo .eixo-ecossistemas-titulo-eco-ecologia{
+    background-color: #3E1D19;
+}
+
+#eixo .eixo-ecossistemas-titulo-eco-politicas{
+    background-color: #252C28;
+}
+
+#eixo .eixo-ecossistemas-titulo-eco-saude{
+    background-color: #1B3A42;
 }
 
 #eixo .eixo-ecossistemas-titulo-linha{
@@ -703,6 +753,241 @@ body{
     font-family: 'Open Sans';
 }
 
+#background{
+    float: left;
+    width: 100%;
+    height: calc(100% - 125px);
+    position: relative;
+}
+
+#background .bg{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    background-image: url('img/background-pagina.png');
+    background-size: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+#background .titulos{
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+
+#background .titulos-nome{
+    float: left;
+    background: #CEF077;
+    padding: 2px 8px;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #183038;
+    margin-top: 30px;
+}
+
+#background .titulos-espaco{
+    float: left;
+    width: 100%;
+}
+
+#background .titulos-banco{
+    float: left;
+    width: 500px;
+    font-size: 50px;
+    font-weight: 500;
+    color: #183038;
+}
+
+#background .titulos-texto{
+    float: left;
+    width: 270px;
+    color: #183038;
+    font-family: 'Open Sans';
+    font-size: 15px;
+}
+
+#background .titulos-texto b{
+    font-family: 'Open Sans';
+}
+
+#topico{
+    float: left;
+    width: 100%;
+    background: #E3E4E9;
+    padding: 40px 0;
+    padding-bottom: 120px;
+}
+
+#topico .body-inner-div{
+    max-width: 1020px;
+}
+
+#topico .topico-div{
+    float: left;
+    width: 100%;
+}
+
+#topico .topico-div-titulo{
+    float: left;
+    width: 100%;
+}
+
+#topico .topico-div-titulo-span{
+    float: left;
+    width: 100%;
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #183038;
+}
+
+#topico .topico-div-titulo-abre-fecha{
+    float: left;
+    width: 100%;
+    border-top: 1px solid #183038;
+    position: relative;
+}
+
+#topico .topico-div-titulo-abre-fecha-maior-menor{
+    float: right;
+   width: 60px;
+   height: 60px; 
+   background: #183038;
+   color: #FFF;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 54px;
+   font-weight: 500;
+   cursor: pointer;
+   position: relative;
+}
+
+.topico-fecha{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    display: none;
+    cursor: pointer;
+}
+
+#topico .topico-div-corpo{
+    float: left;
+    width: 100%;
+    display: none;
+}
+
+#topico .topico-div-corpo-titulo{
+    float: left;
+    width: 70%;
+    font-size: 40px;
+    font-weight: 700;
+    color: #183038;
+    padding-bottom: 30px;
+}
+
+#topico .topico-div-corpo-texto{
+    float: left;
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+#topico .topico-div-corpo-texto span{
+    float: left;
+    width: 100%;
+    padding-bottom: 25px;
+    font-size: 16px;
+    color: #183038;
+}
+
+#topico .topico-entrega{
+    float: left;
+    width: 33.33%;
+    margin-top: 40px;
+}
+
+#topico .topico-entrega-corpo{
+    float: left;
+    width: 70%;
+}
+
+#topico .topico-entrega-topo{
+    float: left;
+    width: 100%;
+    color: #183038;
+    margin-bottom: 8px;
+}
+
+#topico .topico-entrega-ver{
+    float: left;
+    background-color: #CEF077;
+    width: 100%;
+    color: #183038;
+    text-decoration: underline;
+    text-align: center;
+    padding: 14px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#topico .topico-entrega-topo{
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    color: #183038;
+}
+
+#topico .topico-abre-fecha-laranja{
+    background-color: #D56F60 !important;
+}
+
+#topico .topico-abre-fecha-laranja-corpo{
+    border-top: 1px solid #D56F60;
+}
+
+#projeto{
+    float: left;
+    width: 100%;
+    background: #7D9593;
+    font-family: 'Open Sans';
+    color: #FFF;
+    padding: 50px 0;
+}
+
+#projeto .projeto-proximo{
+    float: left;
+    width: 50%;
+    text-align: right;
+    padding-right: 40px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-decoration: underline;
+}
+
+#projeto .projeto-voltar{
+    float: left;
+    width: 50%;
+    padding-left: 40px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-decoration: underline;
+}
+
+
+#projeto a{
+    color: #FFF;
+}
+
 @media only screen and (max-width: 1200px) {
 
     #menu .sub-menu{
@@ -800,6 +1085,49 @@ body{
         margin-bottom: 75px
     }
 
+    #topico .topico-div-corpo-titulo{
+        width: 100%;
+    }   
+
+    #topico .topico-div-corpo-titulo{
+        font-size: 28px;
+    }
+
+    #topico .topico-div-corpo-texto{
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+    #topico .topico-div-corpo-texto span{
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    #topico .topico-div-corpo-titulo{
+        padding-bottom: 25px;
+    }
+
+    #topico .topico-div-titulo-abre-fecha-maior-menor{
+        width: 55px;
+        height: 55px;
+    }
+
+    #background .titulos-banco{
+        font-size: 40px;
+    }
+
+    #background .titulos-texto{
+        font-size: 14px;
+    }
+
+    #background .titulos-nome{
+        font-size: 13.5px;
+    }
+
+
+    #topico{
+        padding-top: 60px;
+    }
    
 }
 
@@ -845,5 +1173,14 @@ body{
 
     #eixo .eixo-div-img{
         height: 120px;
+    }
+
+    .menu-ul-top-titulo{
+        font-size: 2vh;
+        margin-bottom: 0.5vh
+    }
+
+    .menu-ul-top-subtitulo{
+        font-size: 3.25vh;
     }
 }
