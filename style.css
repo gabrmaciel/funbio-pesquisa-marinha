@@ -557,27 +557,34 @@ body{
     width: 32px;
     height:32px;
     margin-right: 5px;
-    background-color: #193A43;
     background-image: url('img/eco1.png');
     background-size: 20px 20px;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+#eixo .eco-1{
+    background-image: url('img/Funbio_mar-aberto.svg');
+}
+
 #eixo .eco-2{
-    background-image: url('img/eco2.png');
+    background-image: url('img/Funbio_corais.svg');
 }
 
 #eixo .eco-3{
-    background-image: url('img/eco3.png');
+    background-image: url('img/Funbio_costoes.svg');
 }
 
 #eixo .eco-4{
-    background-image: url('img/eco4.png');
+    background-image: url('img/Funbio_mangue.svg');
 }
 
 #eixo .eco-5{
-    background-image: url('img/eco5.png');
+    background-image: url('img/Funbio_praias-arenosas.svg');
+}
+
+#eixo .eco-6{
+    background-image: url('img/Funbio_mar-aberto.svg');
 }
 
 #rodape{
