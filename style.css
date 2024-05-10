@@ -1484,6 +1484,11 @@ body{
     #header .compartilhar-mobile{
         display: block;
     }
+
+    #filtrar .select{
+        width: calc(33.33% - 10px);
+        margin-top: 14px;
+    }
    
 }
 
