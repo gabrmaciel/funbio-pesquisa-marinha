@@ -1495,6 +1495,7 @@ body{
 @media only screen and (max-width: 800px) {
     #eixo .eixo-div {
         width: calc(50% - 15px);
+        height: 350px;
     }
 
     #filtrar .filtrar-titulo{
