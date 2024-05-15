@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script> 
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -602,24 +617,24 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-socioambiental">
-                    <div class="eixo-div-img"></div>
-                    <div class="eixo-div-nome eixo-div-nome-socioambiental">SOCIOAMBIENTAL</div>
-                    <div class="eixo-div-sociedade">Perfil socioeconomico</div>
-                    <div class="eixo-div-biodiversidade">E biodiversidade através de atividades de educação ambiental</div>
-                    <div class="eixo-ecossistemas">
-                        <div class="eixo-ecossistemas-titulo">
-                            <span class="eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-socioambiental">ECOSSISTEMAS</span>
-                            <div class="eixo-ecossistemas-titulo-linha">&nbsp;</div>
-                            <div class="eixo-ecossistemas-icon">
-                                <div class="eixo-ecossistemas-icon-div eco-1"></div>
+                    <div class="eixo-div eixo-div-socioambiental" id="eixo-5" style="top: 100px">
+                        <div class="eixo-div-img"></div>
+                        <div class="eixo-div-nome eixo-div-nome-socioambiental">SOCIOAMBIENTAL</div>
+                        <div class="eixo-div-sociedade">Perfil socioeconomico</div>
+                        <div class="eixo-div-biodiversidade">E biodiversidade através de atividades de educação ambiental</div>
+                        <div class="eixo-ecossistemas">
+                            <div class="eixo-ecossistemas-titulo">
+                                <span class="eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-socioambiental">ECOSSISTEMAS</span>
+                                <div class="eixo-ecossistemas-titulo-linha">&nbsp;</div>
+                                <div class="eixo-ecossistemas-icon">
+                                    <div class="eixo-ecossistemas-icon-div eco-1"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-socioambiental">
+                    <div class="eixo-div eixo-div-socioambiental" id="eixo-6" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-socioambiental">SOCIOAMBIENTAL</div>
                         <div class="eixo-div-sociedade">Mulheres na pesca</div>
@@ -636,7 +651,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-socioambiental">
+                    <div class="eixo-div eixo-div-socioambiental" id="eixo-7" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-socioambiental">SOCIOAMBIENTAL</div>
                         <div class="eixo-div-sociedade">Formação de pessoas, cursos e palestras</div>
@@ -653,7 +668,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-socioambiental">
+                    <div class="eixo-div eixo-div-socioambiental" id="eixo-8" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-socioambiental">SOCIOAMBIENTAL</div>
                         <div class="eixo-div-sociedade">Conscientização Ambiental</div>
@@ -670,7 +685,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-socioambiental">
+                    <div class="eixo-div eixo-div-socioambiental" id="eixo-9" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-socioambiental">SOCIOAMBIENTAL</div>
                         <div class="eixo-div-sociedade">Conhecimento tradicional</div>
@@ -687,7 +702,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-ecologia">
+                    <div class="eixo-div eixo-div-ecologia" id="eixo-10" style="top: 100px">
                     <div class="eixo-div-img"></div>
                     <div class="eixo-div-nome eixo-div-nome-ecologia">ECOLOGIA E BIOLOGIA</div>
                     <div class="eixo-div-sociedade">Espécies invasoras</div>
@@ -704,7 +719,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-ecologia">
+                    <div class="eixo-div eixo-div-ecologia" id="eixo-11" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-ecologia">ECOLOGIA E BIOLOGIA</div>
                         <div class="eixo-div-sociedade">Teia trófica</div>
@@ -721,7 +736,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-ecologia">
+                    <div class="eixo-div eixo-div-ecologia" id="eixo-12" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-ecologia">ECOLOGIA E BIOLOGIA</div>
                         <div class="eixo-div-sociedade">Movimentos e rotas migratórias, limites geográfico, ecologia espacial</div>
@@ -738,7 +753,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-ecologia">
+                    <div class="eixo-div eixo-div-ecologia" id="eixo-13" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-ecologia">ECOLOGIA E BIOLOGIA</div>
                         <div class="eixo-div-sociedade">Tamanho populacional, estrutura populacional, parametros idade e crescimento</div>
@@ -759,7 +774,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-politicas">
+                    <div class="eixo-div eixo-div-politicas" id="eixo-14" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-politicas">POLÍTICAS PÚBLICAS</div>
                         <div class="eixo-div-sociedade">Ações voltadas para as Unidades de Conservação</div>
@@ -776,7 +791,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-politicas">
+                    <div class="eixo-div eixo-div-politicas" id="eixo-15" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-politicas">POLÍTICAS PÚBLICAS</div>
                         <div class="eixo-div-sociedade">Ações voltadas para o governo</div>
@@ -793,7 +808,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-politicas">
+                    <div class="eixo-div eixo-div-politicas" id="eixo-16" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-politicas">POLÍTICAS PÚBLICAS</div>
                         <div class="eixo-div-sociedade">Sistematização de licenciamentos Petróleo e Gás, Estado da arte PEAs e PCAPs</div>
@@ -810,7 +825,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-saude">
+                    <div class="eixo-div eixo-div-saude" id="eixo-17" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-saude">SAÚDE ÚNICA</div>
                         <div class="eixo-div-sociedade">Poluentes e contaminantes</div>
@@ -827,7 +842,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-saude">
+                    <div class="eixo-div eixo-div-saude" id="eixo-18" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-saude">SAÚDE ÚNICA</div>
                         <div class="eixo-div-sociedade">Impactos/Mudanças climáticas</div>
@@ -844,7 +859,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-saude">
+                    <div class="eixo-div eixo-div-saude" id="eixo-19" style="top: 100px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-saude">SAÚDE ÚNICA</div>
                         <div class="eixo-div-sociedade">Parasitos (doenças)</div>
@@ -1332,7 +1347,7 @@
             $("#eixo-1").css("top", "0px")
             $("#eixo-2").css("top", "0px")
             $("#eixo-3").css("top", "-60px")
-            $("#eixo-4").css("top", "-120px")
+            $("#eixo-4").css("top", "-120px");
             setTimeout(eixo3, 600);
             setTimeout(eixo4, 600);
 
@@ -1343,6 +1358,22 @@
             function eixo4(){
                 $("#eixo-4").css("top", "0px")
             }
+
+            $("#eixo-5").css("top", "0px")
+            $("#eixo-6").css("top", "0px")
+            $("#eixo-7").css("top", "0px")
+            $("#eixo-8").css("top", "0px");
+            $("#eixo-9").css("top", "0px")
+            $("#eixo-10").css("top", "0px")
+            $("#eixo-11").css("top", "0px")
+            $("#eixo-12").css("top", "0px");
+            $("#eixo-13").css("top", "0px")
+            $("#eixo-14").css("top", "0px")
+            $("#eixo-15").css("top", "0px")
+            $("#eixo-16").css("top", "0px");
+            $("#eixo-17").css("top", "0px")
+            $("#eixo-18").css("top", "0px")
+            $("#eixo-19").css("top", "0px")
         });
 
         
