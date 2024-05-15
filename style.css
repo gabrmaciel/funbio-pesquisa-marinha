@@ -279,6 +279,34 @@ body{
     align-items: center;
 }
 
+.compartilhar-popup-div-link:hover .icon-link{
+    background-image: url('img/icon_link_branco.svg') !important;
+}
+
+.compartilhar-popup-div-email:hover .icon-email{
+    background-image: url('img/icon_email_branco.svg') !important;
+}
+
+.compartilhar-popup-div-facebook:hover .icon-facebook{
+    background-image: url('img/icon_facebook_branco.svg') !important;
+}
+
+.compartilhar-popup-div-twitter:hover .icon-twitter{
+    background-image: url('img/icon_twitter_branco.svg') !important;
+}
+
+.compartilhar-popup-div-linkedin:hover .icon-linkedin{
+    background-image: url('img/icon_linkedin_branco.svg') !important;
+}
+
+.compartilhar-popup-div-whatsapp:hover .icon-whatsapp{
+    background-image: url('img/icon_whatsapp_branco.svg') !important;
+}
+
+.compartilhar-popup-div:hover .compartilhar-popup-div-titulo{
+    color: #FFF;
+}
+
 #compartilhar .compartilhar-popup-subtitulo{
     float: left;
     width: 90%;
@@ -647,6 +675,7 @@ body{
 
 #filtrar .select-drop{
     position: absolute;
+    z-index: 2;
     top: 22px;
     left: 0;
     border: 1px solid #777;
@@ -766,6 +795,63 @@ body{
     margin-bottom: 15px;
     background:#183038;
     padding: 13.5px;
+    position: relative;
+    transition: 1.4s;
+}
+
+#eixo-3{
+    transition: 1s !important;
+}
+
+#eixo-4{
+    transition: 1s !important;
+}
+
+#eixo-3-pesca{
+    transition: 1s !important;
+}
+
+#eixo-4-pesca{
+    transition: 1s !important;
+}
+
+#eixo-3-socioambiental{
+    transition: 1s !important;
+}
+
+#eixo-4-socioambiental{
+    transition: 1s !important;
+}
+
+#eixo-3-politicas{
+    transition: 1s !important;
+}
+
+#eixo-4-politicas{
+    transition: 1s !important;
+}
+
+#eixo-3-saude{
+    transition: 1s !important;
+}
+
+#eixo-4-saude{
+    transition: 1s !important;
+}
+
+#eixo .eixo-div-linha-2{
+    float: left;
+    width: 100%;
+}
+
+#eixo .eixo-div-linha-3{
+    float: left;
+    width: 100%;
+}
+
+#eixo .eixo-div-linha-4{
+    float: left;
+    width: 100%;
 }
 
 #eixo .eixo-div-pesca{
@@ -806,10 +892,17 @@ body{
 
 #eixo .eixo-div-nome{
     float: left;
+    width: auto;
     padding: 2px 5px;
     font-size: 12px;
     background: #CEF077;
     color: #183038;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#eixo .eixo-div:hover .eixo-div-nome{
+    width: 100%;
 }
 
 #eixo .eixo-div-sociedade{
@@ -926,6 +1019,26 @@ body{
 
 #eixo .eco-6{
     background-image: url('img/Funbio_mar-aberto.svg');
+}
+
+#eixo .eixo-div-nome-pesca{
+    width: 50px;
+}
+
+#eixo .eixo-div-nome-socioambiental{
+    width: 121px;
+}
+
+#eixo .eixo-div-nome-ecologia{
+    width: 152px;
+}
+
+#eixo .eixo-div-nome-politicas{
+    width: 140px;
+}
+
+#eixo .eixo-div-nome-saude{
+    width: 95px;
 }
 
 #rodape{
@@ -1331,9 +1444,29 @@ body{
     text-decoration: underline;
 }
 
-
 #projeto a{
     color: #FFF;
+}
+
+#widget{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#widget .widget-div{
+    position: fixed;
+    left: 50%;
+    bottom: 100px;
+    z-index: 999;
+    padding: 10px 16px;
+    background-color: #183038;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    display: none;
+    transition: 0.3s;
 }
 
 @media only screen and (max-width: 1200px) {
