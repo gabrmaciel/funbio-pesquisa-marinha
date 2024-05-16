@@ -549,7 +549,7 @@
         <div class="body-inner-div">
             <div class="eixo-div-corpo">
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-pesca" id="eixo-1" style="top: 400px">
+                    <div class="eixo-div eixo-div-pesca" id="eixo-1" style="top: 300px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-pesca">PESCA</div>
                         <div class="eixo-div-sociedade">Cadeia produtiva ou cadeia de valores</div>
@@ -566,7 +566,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-pesca" id="eixo-2" style="top: 200px">
+                    <div class="eixo-div eixo-div-pesca" id="eixo-2" style="top: 300px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-pesca">PESCA</div>
                         <div class="eixo-div-sociedade">Séries históricas, caracterização de desembarque, produtividade histórica</div>
@@ -583,7 +583,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-pesca" id="eixo-3" style="top: 100px">
+                    <div class="eixo-div eixo-div-pesca" id="eixo-3" style="top: 300px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-pesca">PESCA</div>
                         <div class="eixo-div-sociedade">Áreas de conflito</div>
@@ -600,7 +600,7 @@
                     </div>
                 </a>
                 <a href="pagina.html">
-                    <div class="eixo-div eixo-div-pesca" id="eixo-4" style="top: 50px">
+                    <div class="eixo-div eixo-div-pesca" id="eixo-4" style="top: 300px">
                         <div class="eixo-div-img"></div>
                         <div class="eixo-div-nome eixo-div-nome-pesca">PESCA</div>
                         <div class="eixo-div-sociedade">Artes de pesca e caracterização da pesca</div>
@@ -1344,18 +1344,46 @@
         }
 
         $(document).ready(function(){
-            $("#eixo-1").css("top", "0px")
-            $("#eixo-2").css("top", "0px")
-            $("#eixo-3").css("top", "-60px")
-            $("#eixo-4").css("top", "-120px");
-            setTimeout(eixo3, 600);
-            setTimeout(eixo4, 600);
+            
+            
+            setTimeout(eixo1, 300);
+            setTimeout(eixo1Volta, 1300);
+            setTimeout(eixo2, 200);
+            setTimeout(eixo2Volta, 1200);
+            setTimeout(eixo3, 100);
+            setTimeout(eixo3Volta, 1100);
+            setTimeout(eixo4, 0);
+            setTimeout(eixo4Volta, 1000);
+
+            function eixo1(){
+                $("#eixo-1").css("top", "-60px")
+            }
+            
+            function eixo1Volta(){
+                $("#eixo-1").css("top", "0px")
+            }
+
+            function eixo2(){
+                $("#eixo-2").css("top", "-60px")
+            }
+            
+            function eixo2Volta(){
+                $("#eixo-2").css("top", "0px")
+            }
 
             function eixo3(){
+                $("#eixo-3").css("top", "-60px")
+            }
+
+            function eixo3Volta(){
                 $("#eixo-3").css("top", "0px")
             }
 
             function eixo4(){
+                $("#eixo-4").css("top", "-60px");
+            }
+
+            function eixo4Volta(){
                 $("#eixo-4").css("top", "0px")
             }
 
