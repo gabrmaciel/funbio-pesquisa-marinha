@@ -1053,34 +1053,34 @@ html.lenis, html.lenis body {
     width: 32px;
     height:32px;
     margin-right: 5px;
-    background-image: url('img/eco1.png');
-    background-size: 20px 20px;
+    background-image: url('img/praias-arenosas.svg');
+    background-size: 26px 26px;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #eixo .eco-1{
-    background-image: url('img/Funbio_mar-aberto.svg');
+    background-image: url('img/praias-arenosas.svg');
 }
 
 #eixo .eco-2{
-    background-image: url('img/Funbio_corais.svg');
+    background-image: url('img/corais.svg');
 }
 
 #eixo .eco-3{
-    background-image: url('img/Funbio_costoes.svg');
+    background-image: url('img/coestoes.svg');
 }
 
 #eixo .eco-4{
-    background-image: url('img/Funbio_mangue.svg');
+    background-image: url('img/manguezais.svg');
 }
 
 #eixo .eco-5{
-    background-image: url('img/Funbio_praias-arenosas.svg');
+    background-image: url('img/praias-arenosas.svg');
 }
 
 #eixo .eco-6{
-    background-image: url('img/Funbio_mar-aberto.svg');
+    background-image: url('img/praias-arenosas.svg');
 }
 
 #eixo .eixo-div-nome-pesca{
