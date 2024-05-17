@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #183038;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #cef077;
+      }
+    </style>
+  </defs>
+  <path id="Caminho_78" data-name="Caminho 78" class="cls-2" d="M499.23,248.95C499.39,111.34,387.98-.34,250.37-.51h-.6C112.04-.4.41,111.22.3,248.95c.4,137.61,111.86,249.06,249.47,249.47,137.73-.11,249.35-111.74,249.46-249.47Z"/>
+  <circle id="Elipse_60" data-name="Elipse 60" class="cls-2" cx="250.26" cy="249.49" r="249.97"/>
+  <g>
+    <rect id="Retângulo_1278" data-name="Retângulo 1278" class="cls-1" x="137.37" y="225.3" width="241.9" height="48.38" transform="translate(-100.76 255.74) rotate(-45)"/>
+    <rect id="Retângulo_1279" data-name="Retângulo 1279" class="cls-1" x="234.14" y="128.54" width="48.38" height="241.9" transform="translate(-100.76 255.74) rotate(-45)"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #183038;
+        stroke-width: 9.92px;
+      }
+
+      .cls-2 {
+        fill: #183038;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="250" cy="250.02" r="243.98"/>
+  <g id="Grupo_116" data-name="Grupo 116">
+    <rect id="Retângulo_1256" data-name="Retângulo 1256" class="cls-2" x="129.04" y="330.66" width="241.92" height="48.38"/>
+    <rect id="Retângulo_1269" data-name="Retângulo 1269" class="cls-2" x="129.04" y="120.99" width="241.92" height="48.38"/>
+    <rect id="Retângulo_1270" data-name="Retângulo 1270" class="cls-2" x="129.04" y="225.82" width="241.92" height="48.38"/>
+  </g>
+</svg>
