@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div id="menu">
         <div class="fechar" onclick="fechar()"></div>
-        
         <div class="menu">
-            
-            <div class="menu-ul">
-                <div class="menu-ul-topo" id="ul-1">
+            <div class="menu-ul" id="ul-1">
+                <div class="menu-ul-topo">
                     <div class="menu-ul-subtitulo">EIXO #1</div>
                     <div class="menu-ul-titulo">PESCA</div>
                 </div>
-                <div class="sub-menu" id="sub-menu-1">
+                <div class="sub-menu" id="sub-menu-1" style="top: 20%">
                     <div class="sub-menu-ul" id="sub-1">
                         <div class="sub-menu-ul-numeros">
                             <div class="sub-menu-ul-numeros-num">1</div>
@@ -50,11 +49,11 @@
                 </div>
             </div>
             <div class="menu-ul" id="ul-2">
-                <div class="menu-ul-topo" id="ul-2">
+                <div class="menu-ul-topo">
                     <div class="menu-ul-subtitulo">EIXO #2</div>
                     <div class="menu-ul-titulo">SOCIOAMBIENTAL</div>
                 </div>
-                <div class="sub-menu" id="sub-menu-2">
+                <div class="sub-menu" id="sub-menu-2" style="top: 20%">
                     <div class="sub-menu-ul" id="sub-1">
                         <div class="sub-menu-ul-numeros">
                             <div class="sub-menu-ul-numeros-num">1</div>
@@ -93,11 +92,11 @@
                 </div>
             </div>
             <div class="menu-ul" id="ul-3">
-                <div class="menu-ul-topo" id="ul-3">
+                <div class="menu-ul-topo">
                     <div class="menu-ul-subtitulo">EIXO #3</div>
                     <div class="menu-ul-titulo">ECOLOGIA E BIOLOGIA</div>
                 </div>
-                <div class="sub-menu" id="sub-menu-3">
+                <div class="sub-menu" id="sub-menu-3" style="top: 20%">
                     <div class="sub-menu-ul" id="sub-1">
                         <div class="sub-menu-ul-numeros">
                             <div class="sub-menu-ul-numeros-num">1</div>
@@ -129,11 +128,11 @@
                 </div>
             </div>
             <div class="menu-ul" id="ul-4">
-                <div class="menu-ul-topo" id="ul-4">
+                <div class="menu-ul-topo">
                     <div class="menu-ul-subtitulo">EIXO #4</div>
                     <div class="menu-ul-titulo">POLÍTICAS PÚBLICAS</div>
                 </div>
-                <div class="sub-menu" id="sub-menu-4">
+                <div class="sub-menu" id="sub-menu-4" style="top: 20%">
                     <div class="sub-menu-ul" id="sub-1">
                         <div class="sub-menu-ul-numeros">
                             <div class="sub-menu-ul-numeros-num">1</div>
@@ -158,11 +157,11 @@
                 </div>
             </div>
             <div class="menu-ul" id="ul-5">
-                <div class="menu-ul-topo" id="ul-5">
+                <div class="menu-ul-topo">
                     <div class="menu-ul-subtitulo">EIXO #5</div>
                     <div class="menu-ul-titulo">SAÚDE ÚNICA</div>
                 </div>
-                <div class="sub-menu" id="sub-menu-5">
+                <div class="sub-menu" id="sub-menu-5" style="top: 20%">
                     <div class="sub-menu-ul" id="sub-1">
                         <div class="sub-menu-ul-numeros">
                             <div class="sub-menu-ul-numeros-num">1</div>
@@ -356,34 +355,54 @@
             </div>
         </div>
     </div>
+    
     <div id="compartilhar">
         <div class="fechar" onclick="fecharCompartilhar()"></div>
         <div class="compartilhar-popup-titulo">COMPARTILHE</div>
         <div class="compartilhar-popup-subtitulo">Lorem ipsum dolor sit amet, consecte adipiscing elit. Fusce non arcu urna.</div>
-        <div class="compartilhar-popup-div">
+        <div class="compartilhar-popup-div compartilhar-popup-div-link" onclick="copiarTexto(event)">
             <div class="compartilhar-popup-div-icon icon-link">&nbsp;</div>
             <div class="compartilhar-popup-div-titulo">COPIAR LINK</div>
         </div>
-        <div class="compartilhar-popup-div">
-            <div class="compartilhar-popup-div-icon icon-email">&nbsp;</div>
-            <div class="compartilhar-popup-div-titulo">EMAIL</div>
+        <a href="mailto:funbio@funbio.org">
+            <div class="compartilhar-popup-div compartilhar-popup-div-email">
+                <div class="compartilhar-popup-div-icon icon-email">&nbsp;</div>
+                <div class="compartilhar-popup-div-titulo">EMAIL</div>
+            </div>
+        </a>
+        <a href="https://www.facebook.com/share.php?u=funbio.org.br&quote=your+text+goes+here" target="_blank">
+            <div class="compartilhar-popup-div compartilhar-popup-div-facebook">
+                <div class="compartilhar-popup-div-icon icon-facebook">&nbsp;</div>
+                <div class="compartilhar-popup-div-titulo">FACEBOOK</div>
+            </div>
+        </a>
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=O novo site da Funbio está disponível! Informações sobre pesca, dados científicos e muito mais: http://funbio.org.br " data-size="large" target="_blank">
+            <div class="compartilhar-popup-div compartilhar-popup-div-twitter">
+                <div class="compartilhar-popup-div-icon icon-twitter">&nbsp;</div>
+                <div class="compartilhar-popup-div-titulo">X</div>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=funbio.org.br"target="_blank" title="Compartilhar no LinkedIn">
+            <div class="compartilhar-popup-div compartilhar-popup-div-linkedin">
+                <div class="compartilhar-popup-div-icon icon-linkedin">&nbsp;</div>
+                <div class="compartilhar-popup-div-titulo compartilhar-popup-div-titulo-linkedin">LINKEDIN</div>
+            </div>
+        </a>
+        <a href="intent://send/0123456789#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">
+            <div class="compartilhar-popup-div compartilhar-popup-div-whatsapp">
+                <div class="compartilhar-popup-div-icon icon-whatsapp">&nbsp;</div>
+                <div class="compartilhar-popup-div-titulo">WHATSAPP</div>
+            </div>
+        </a>
+        
+    </div>
+    <div id="widget">
+        <div class="widget-linha">
+            <div class="widget-div" id="area-transferencia">
+                Link copiado para a área de transferência
+            </div>
         </div>
-        <div class="compartilhar-popup-div">
-            <div class="compartilhar-popup-div-icon icon-facebook">&nbsp;</div>
-            <div class="compartilhar-popup-div-titulo">FACEBOOK</div>
-        </div>
-        <div class="compartilhar-popup-div">
-            <div class="compartilhar-popup-div-icon icon-twitter">&nbsp;</div>
-            <div class="compartilhar-popup-div-titulo">X</div>
-        </div>
-        <div class="compartilhar-popup-div">
-            <div class="compartilhar-popup-div-icon icon-linkedin">&nbsp;</div>
-            <div class="compartilhar-popup-div-titulo">LINKEDIN</div>
-        </div>
-        <div class="compartilhar-popup-div">
-            <div class="compartilhar-popup-div-icon icon-whatsapp">&nbsp;</div>
-            <div class="compartilhar-popup-div-titulo">WHATSAPP</div>
-        </div>
+        
     </div>
     <div id="header">
         <div class="body-inner-div">
@@ -399,30 +418,40 @@
                             <div class="arrow-up"></div>
                             <div class="compartilhar-popup-titulo">COMPARTILHE</div>
                             <div class="compartilhar-popup-subtitulo">Lorem ipsum dolor sit amet, consecte adipiscing elit. Fusce non arcu urna.</div>
-                            <div class="compartilhar-popup-div">
+                            <div class="compartilhar-popup-div compartilhar-popup-div-link" onclick="copiarTexto(event)">
                                 <div class="compartilhar-popup-div-icon icon-link">&nbsp;</div>
                                 <div class="compartilhar-popup-div-titulo">COPIAR LINK</div>
                             </div>
-                            <div class="compartilhar-popup-div">
-                                <div class="compartilhar-popup-div-icon icon-email">&nbsp;</div>
-                                <div class="compartilhar-popup-div-titulo">EMAIL</div>
-                            </div>
-                            <div class="compartilhar-popup-div">
-                                <div class="compartilhar-popup-div-icon  icon-facebook">&nbsp;</div>
-                                <div class="compartilhar-popup-div-titulo">FACEBOOK</div>
-                            </div>
-                            <div class="compartilhar-popup-div">
-                                <div class="compartilhar-popup-div-icon  icon-twitter">&nbsp;</div>
-                                <div class="compartilhar-popup-div-titulo">X</div>
-                            </div>
-                            <div class="compartilhar-popup-div">
-                                <div class="compartilhar-popup-div-icon  icon-linkedin">&nbsp;</div>
-                                <div class="compartilhar-popup-div-titulo">LINKEDIN</div>
-                            </div>
-                            <div class="compartilhar-popup-div">
-                                <div class="compartilhar-popup-div-icon icon-whatsapp">&nbsp;</div>
-                                <div class="compartilhar-popup-div-titulo">WHATSAPP</div>
-                            </div>
+                            <a href="mailto:funbio@funbio.org">
+                                <div class="compartilhar-popup-div compartilhar-popup-div-email">
+                                    <div class="compartilhar-popup-div-icon icon-email">&nbsp;</div>
+                                    <div class="compartilhar-popup-div-titulo">EMAIL</div>
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/share.php?u=funbio.org.br&quote=your+text+goes+here" target="_blank">
+                                <div class="compartilhar-popup-div compartilhar-popup-div-facebook">
+                                    <div class="compartilhar-popup-div-icon  icon-facebook">&nbsp;</div>
+                                    <div class="compartilhar-popup-div-titulo">FACEBOOK</div>
+                                </div>
+                            </a>
+                            <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=O novo site da Funbio está disponível! Informações sobre pesca, dados científicos e muito mais: http://funbio.org.br " data-size="large" target="_blank">
+                                <div class="compartilhar-popup-div compartilhar-popup-div-twitter">
+                                    <div class="compartilhar-popup-div-icon  icon-twitter">&nbsp;</div>
+                                    <div class="compartilhar-popup-div-titulo">X</div>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=funbio.org.br"target="_blank" title="Compartilhar no LinkedIn">
+                                <div class="compartilhar-popup-div compartilhar-popup-div-linkedin">
+                                    <div class="compartilhar-popup-div-icon  icon-linkedin">&nbsp;</div>
+                                    <div class="compartilhar-popup-div-titulo">LINKEDIN</div>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/19971468663/?text=Hello" target="_blank">
+                                <div class="compartilhar-popup-div compartilhar-popup-div-whatsapp">
+                                    <div class="compartilhar-popup-div-icon icon-whatsapp">&nbsp;</div>
+                                    <div class="compartilhar-popup-div-titulo">WHATSAPP</div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="header-icons-share share" onclick="abrir()"></div>
@@ -447,7 +476,7 @@
             <div class="topico-div">
                 <div class="topico-div-titulo">
                     <div class="topico-div-titulo-span">Visão Geral</div>
-                    <div class="topico-div-titulo-abre-fecha topico-abre-fecha-laranja-corpo" id="topico-abre-fecha-corpo-1">
+                    <div class="topico-div-titulo-abre-fecha topico-abre-fecha-laranja-corpo-select" id="topico-abre-fecha-corpo-1">
                         <div class="topico-div-titulo-abre-fecha-maior-menor topico-abre-fecha-laranja" id="topico-abre-fecha-1" onclick="abre_fecha(1)">
                             <div class="topico-maior-menor" id="topico-maior-menor-1">-</div>
                         </div>
@@ -592,32 +621,9 @@
             </div>
         </div>
     </div>
-
     <script>
-        function abre_fecha(id){
-            $(".topico-div-corpo").css("display", "none")
-            $(".topico-maior-menor").html("+")
-            $(".topico-div-titulo-abre-fecha-maior-menor").removeClass("topico-abre-fecha-laranja")
-            $(".topico-div-titulo-abre-fecha").removeClass("topico-abre-fecha-laranja-corpo")
-            $(".topico-fecha").css("display", "none")
-
-            $("#topico-corpo-"+id).css("display", "block")
-            $("#topico-maior-menor-"+id).html("-")
-            $("#topico-abre-fecha-"+id).addClass("topico-abre-fecha-laranja");
-            $("#topico-abre-fecha-corpo-"+id).addClass("topico-abre-fecha-laranja-corpo")
-            $("#topico-fecha-"+id).css("display", "block")
-        }
-
-        function fecha(id){
-            $("#topico-corpo-"+id).css("display", "none")    
-            $("#topico-maior-menor-"+id).html("+")
-            $("#topico-abre-fecha-"+id).removeClass("topico-abre-fecha-laranja");
-            $("#topico-abre-fecha-corpo-"+id).removeClass("topico-abre-fecha-laranja-corpo") 
-            $("#topico-fecha-"+id).css("display", "none")   
-        }
-
         $("#ul-1").hover(function(){
-            $(".sub-menu").css("opacity", "1");
+            $("#sub-menu-1").css("opacity", "1");
             $("#ul-2").css("opacity", "0.2");
             $("#ul-3").css("opacity", "0.2");
             $("#ul-4").css("opacity", "0.2");
@@ -627,7 +633,7 @@
             $(".menu-ul").css("opacity", "1");
         });
         $("#ul-2").hover(function(){
-            $(".sub-menu").css("opacity", "1");
+            $("#sub-menu-2").css("opacity", "1");
             $("#ul-1").css("opacity", "0.2");
             $("#ul-3").css("opacity", "0.2");
             $("#ul-4").css("opacity", "0.2");
@@ -637,7 +643,7 @@
             $(".menu-ul").css("opacity", "1");
         });
         $("#ul-3").hover(function(){
-            $(".sub-menu").css("opacity", "1");
+            $("#sub-menu-3").css("opacity", "1");
             $("#ul-1").css("opacity", "0.2");
             $("#ul-2").css("opacity", "0.2");
             $("#ul-4").css("opacity", "0.2");
@@ -647,7 +653,7 @@
             $(".menu-ul").css("opacity", "1");
         });
         $("#ul-4").hover(function(){
-            $(".sub-menu").css("opacity", "1");
+            $("#sub-menu-4").css("opacity", "1");
             $("#ul-1").css("opacity", "0.2");
             $("#ul-2").css("opacity", "0.2");
             $("#ul-3").css("opacity", "0.2");
@@ -657,7 +663,7 @@
             $(".menu-ul").css("opacity", "1");
         });
         $("#ul-5").hover(function(){
-            $(".sub-menu").css("opacity", "1");
+            $("#sub-menu-5").css("opacity", "1");
             $("#ul-1").css("opacity", "0.2");
             $("#ul-2").css("opacity", "0.2");
             $("#ul-3").css("opacity", "0.2");
@@ -666,64 +672,25 @@
             $(".sub-menu").css("opacity", "0");
             $(".menu-ul").css("opacity", "1");
         });
-        $("#ul-1").hover(function(){
-            $(".sub-menu").css("opacity", "1");
-            $("#ul-2").css("opacity", "0.2");
-            $("#ul-3").css("opacity", "0.2");
-            $("#ul-4").css("opacity", "0.2");
-            $("#ul-5").css("opacity", "0.2");
+
+        $("#topico-abre-fecha-corpo-1").hover(function(){
+            $("#topico-abre-fecha-corpo-1").addClass("topico-abre-fecha-laranja-corpo");
         }, function(){
-            $(".sub-menu").css("opacity", "0");
-            $(".menu-ul").css("opacity", "1");
+            $("#topico-abre-fecha-corpo-1").removeClass("topico-abre-fecha-laranja-corpo");
+        });
+        
+        $("#topico-abre-fecha-corpo-2").hover(function(){
+            $("#topico-abre-fecha-corpo-2").addClass("topico-abre-fecha-laranja-corpo");
+        }, function(){
+            $("#topico-abre-fecha-corpo-2").removeClass("topico-abre-fecha-laranja-corpo");
         });
 
-        function fechar(){
-            $("#menu").css("display", "none");
-            $("html, body").css("overflow", "auto")
-        }
+        $("#topico-abre-fecha-corpo-3").hover(function(){
+            $("#topico-abre-fecha-corpo-3").addClass("topico-abre-fecha-laranja-corpo");
+        }, function(){
+            $("#topico-abre-fecha-corpo-3").removeClass("topico-abre-fecha-laranja-corpo");
+        });
 
-        function abrir(){
-            $("#menu").css("display", "block");
-            $("html, body").css("overflow", "hidden")
-        }
-
-        function abreFechaMenu(id){
-            $(".menu-submenu").css("height", "0px")
-            $("#menu-submenu-"+id).css("height", "341px")
-            $("#menu-fechar-"+ id).css("display", "block");
-            $(".menu-ul-top-subtitulo img").css("transform", "rotate(0deg)")
-            $("#menu-mobile-"+id).css("transform", "rotate(180deg)")
-            $(".menu-ul-top").css("opacity", "0.2")
-            $("#menu-ul-top-"+id).css("opacity", "1")
-        }
-        
-        function fechaMenu(id){
-            $("#menu-submenu-"+ id).css("height", "0px")
-            $("#menu-fechar-"+ id).css("display", "none")
-            $(".menu-ul-top-subtitulo img").css("transform", "rotate(0deg)")
-            $(".menu-submenu").css("height", "0px")
-            $(".menu-ul-top").css("opacity", "1")
-        }
-
-        function compartilharAbrir(){
-            $(".compartilhar-popup").css("display", "block")
-            $(".compartilhar-abrir").css("display", "none")
-            $(".compartilhar-fechar").css("display", "block")
-        }
-        
-        function compartilharFechar(){
-            $(".compartilhar-popup").css("display", "none")
-            $(".compartilhar-abrir").css("display", "block")
-            $(".compartilhar-fechar").css("display", "none")
-        }
-
-        function compartilharMobileAbrir(){
-            $("#compartilhar").css("display", "block")
-        }
-
-        function fecharCompartilhar(){
-            $("#compartilhar").css("display", "none")
-        }
     </script>
 </body>
 </html>

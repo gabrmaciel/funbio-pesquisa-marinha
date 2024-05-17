@@ -186,7 +186,7 @@ html.lenis, html.lenis body {
     position: absolute;
     height: 100vh;
     z-index: 1;
-    top: 20%;
+    top: 5%;
     left: 55%;
     opacity: 0;
     min-width: 360px;
@@ -206,7 +206,7 @@ html.lenis, html.lenis body {
     top: -5px;
     font-style: italic;
     margin-right: 14px;
-    color: #CEF077;
+    color: #FFF;
 }
 
 #menu .sub-menu-ul-texto{
@@ -227,14 +227,14 @@ html.lenis, html.lenis body {
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    background: #CEF077;
-    background-image: url('img/close.png');
+    background-image: url('img/fechar.svg');
     background-repeat: no-repeat;
-    background-size: 22px 22px;
+    background-size: 100%;
     background-position: center;
     cursor: pointer;
     z-index: 9;
 }
+
 
 #menu .sub-menu-ul-texto{
     position: relative;
@@ -246,7 +246,7 @@ html.lenis, html.lenis body {
 #menu .sub-ul-numeros-linha{
     position: absolute;
     width: 100%;
-    border-bottom: 1px solid #CEF077;
+    border-bottom: 1px solid #FFF;
 }
 
 #compartilhar{
@@ -297,6 +297,11 @@ html.lenis, html.lenis body {
     height: 50px;
     display: flex;
     align-items: center;
+}
+
+.compartilhar-popup-div-titulo{
+    position: relative;
+    top: 2px;
 }
 
 .compartilhar-popup-div-link:hover .icon-link{
@@ -403,32 +408,42 @@ html.lenis, html.lenis body {
     width: 38px;
     height: 38px;
     border-radius: 100%;
-    background: #CEF077;
     cursor: pointer;
     position: relative;
 }
 
 #header .share{
-    background-image: url('img/menu.png');
-    background-size: 30px 30px;
+    background-image: url('img/menu.svg');
+    background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
 }
 
+#header .share:hover{
+    background-image: url('img/menu-hover.svg');
+}
+
+#header .share:active{
+    background-image: url('img/menu-hover-click.svg');
+}
 
 #header .compartilhar-mobile{
-    background-image: url('img/share.png');
-    background-size: 20px 20px;
+    background-image: url('img/compartilhar.svg');
+    background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
     display: none
 }
 
+#header .compartilhar-mobile:hover{
+    background-image: url('img/compartilhar-hover.svg');
+}
+
 #header .compartilhar-popup{
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     top: 68px;
     left: -217px;
     width: 300px;
@@ -520,8 +535,15 @@ html.lenis, html.lenis body {
 }
 
 #header .compartilhar{
-    background-image: url('img/share.png');
-    background-size: 20px 20px;
+    background-image: url('img/compartilhar.svg');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#header .compartilhar:hover{
+    background-image: url('img/compartilhar-hover.svg');
+    background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -582,6 +604,8 @@ html.lenis, html.lenis body {
     width: 100%;
     height: 110px;
     background: #7D9593;
+    position: relative;
+    z-index: 1
 }
 
 #filtrar .body-inner-div{
@@ -819,43 +843,61 @@ html.lenis, html.lenis body {
     transition: 1s;
 }
 
+#eixo-1{
+    z-index: 2;
+}
+
+#eixo-2{
+    z-index: 2;
+}
+
 #eixo-3{
+    z-index: 2;
     transition: 1s !important;
 }
 
 #eixo-4{
+    z-index: 2;
     transition: 1s !important;
 }
 
 #eixo-3-pesca{
+    z-index: 2;
     transition: 1s !important;
 }
 
 #eixo-4-pesca{
+    z-index: 2;
     transition: 1s !important;
 }
 
 #eixo-3-socioambiental{
+    z-index: 2;
     transition: 1s !important;
 }
 
 #eixo-4-socioambiental{
+    z-index: 2;
     transition: 1s !important;
 }
 
 #eixo-3-politicas{
+    z-index: 2;
     transition: 1s !important;
 }
 
 #eixo-4-politicas{
+    z-index: 2;
     transition: 1s !important;
 }
 
 #eixo-3-saude{
+    z-index: 2;
     transition: 1s !important;
 }
 
 #eixo-4-saude{
+    z-index: 2;
     transition: 1s !important;
 }
 
@@ -1114,8 +1156,12 @@ html.lenis, html.lenis body {
 }
 
 #rodape .rodape-site-datadot a{
-    padding-left: 5px;
+    margin-left: 5px;
     margin-top: 0px;
+}
+
+#rodape .rodape-site-datadot a:hover{
+    background-color: #CEF077;
 }
 
 #rodape .rodape-site-mobile{
@@ -1347,6 +1393,10 @@ html.lenis, html.lenis body {
    position: relative;
 }
 
+#topico .topico-div-titulo-abre-fecha-maior-menor:hover{
+    background: #D56F60;
+}
+
 .topico-fecha{
     position: absolute;
     top: 0;
@@ -1434,6 +1484,10 @@ html.lenis, html.lenis body {
     border-top: 1px solid #D56F60;
 }
 
+#topico .topico-abre-fecha-laranja-corpo-select{
+    border-top: 1px solid #D56F60;
+}
+
 #projeto{
     float: left;
     width: 100%;
@@ -1468,12 +1522,21 @@ html.lenis, html.lenis body {
     color: #FFF;
 }
 
+#projeto a:hover{
+    color: #CEF077;
+}
+
+#projeto a:active{
+    color: #cef07762;
+}
+
 #widget{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    display: none
 }
 
 #widget .widget-div{
@@ -1524,7 +1587,7 @@ html.lenis, html.lenis body {
     #menu .fechar{
         width: 40px;
         height: 40px;
-        background-size: 20px;
+        background-size: 100%;
     }
 
     #menu .menu-mobile{
