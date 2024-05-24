@@ -860,6 +860,8 @@ html.lenis, html.lenis body {
 #eixo .eixo-div{
     float: left;
     width: calc(25% - 15px);
+
+    height: 397px;
     margin-right: 15px;
     margin-bottom: 15px;
     background:#183038;
@@ -1008,20 +1010,11 @@ html.lenis, html.lenis body {
     min-height: 52px;
     text-decoration-color: #1B3014;
     transition: 0.5s;
-    text-decoration: none;
-    background: linear-gradient(to right, #FFF, #FFF) no-repeat;
-    background-size: 0 2px;
-    background-position: 0 98%;
-    transition: background-size 0.5s cubic-bezier(0.2, 0.63, 0.36, 1);
-}
-
-#eixo .eixo-div:hover .eixo-div-sociedade{
-    background-size: 100% 2px;
 }
 
 #eixo .eixo-div:hover .eixo-div-sociedade3{
-    /* text-decoration: underline;
-    text-decoration-color: #FFF */
+    text-decoration: underline;
+    text-decoration-color: #FFF
 }
 
 #eixo .eixo-div-sociedade2{
@@ -1126,10 +1119,12 @@ html.lenis, html.lenis body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    cursor: pointer;
 }
 
 #eixo .eixo-ecossistemas-icon-div-flag{
     position: absolute;
+    z-index: 2;
     top: 10px;
     left: 44px;
     background-color: #FFF;
