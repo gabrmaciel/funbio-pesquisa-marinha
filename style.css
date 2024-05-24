@@ -201,7 +201,8 @@ html.lenis, html.lenis body {
     top: 5%;
     left: 55%;
     opacity: 0;
-    min-width: 360px;
+    min-width: 440px;
+    max-width: 600px;
 }
 
 #menu .sub-menu-ul{
