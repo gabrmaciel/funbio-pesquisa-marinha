@@ -1,9 +1,9 @@
 function abre_fecha(id){
-    $(".topico-div-corpo").css("display", "none")
-    $(".topico-maior-menor").html("+")
-    $(".topico-div-titulo-abre-fecha-maior-menor").removeClass("topico-abre-fecha-laranja")
-    $(".topico-div-titulo-abre-fecha").removeClass("topico-abre-fecha-laranja-corpo-select")
-    $(".topico-fecha").css("display", "none")
+    //$(".topico-div-corpo").css("display", "none")
+    //$(".topico-maior-menor").html("+")
+    // $(".topico-div-titulo-abre-fecha-maior-menor").removeClass("topico-abre-fecha-laranja")
+    // $(".topico-div-titulo-abre-fecha").removeClass("topico-abre-fecha-laranja-corpo-select")
+    // $(".topico-fecha").css("display", "none")
 
     $("#topico-corpo-"+id).css("display", "block")
     $("#topico-maior-menor-"+id).html("-")
@@ -15,7 +15,7 @@ function abre_fecha(id){
 function fecha(id){
     $("#topico-corpo-"+id).css("display", "none")    
     $("#topico-maior-menor-"+id).html("+")
-    $("#topico-abre-fecha-"+id).removeClass("topico-abre-fecha-laranja");
+    $("#topico-abre-fecha-"+id).removeClass("topico-abre-fecha-laranja")
     $("#topico-abre-fecha-corpo-"+id).removeClass("topico-abre-fecha-laranja-corpo-select") 
     $("#topico-fecha-"+id).css("display", "none")   
 }
