@@ -1564,6 +1564,7 @@ html.lenis, html.lenis body {
 
 #topico .topico-entrega-ver:hover{
     background-color: #183038;
+    color: #FFF;
 }
 
 #topico .topico-entrega-ver:active{
