@@ -1115,7 +1115,6 @@ html.lenis, html.lenis body {
     width: 32px;
     height:32px;
     margin-right: 5px;
-    background-image: url('img/praias-arenosas.svg');
     background-size: 30px 30px;
     background-position: center;
     background-repeat: no-repeat;
@@ -1134,6 +1133,7 @@ html.lenis, html.lenis body {
     padding: 2px 6px;
     padding-bottom: 0;
     display: none;
+    width: 100px;
 }
 
 #eixo .eixo-ecossistemas-icon-div-flag-triangle{
@@ -1152,27 +1152,39 @@ html.lenis, html.lenis body {
     display: block;
 }
 
-#eixo .eco-1{
+#eixo .eco-F{
     background-image: url('img/praias-arenosas.svg');
 }
 
-#eixo .eco-2{
+#eixo .eco-G{
     background-image: url('img/corais.svg');
 }
 
-#eixo .eco-3{
+#eixo .eco-H{
     background-image: url('img/coestoes.svg');
 }
 
-#eixo .eco-4{
+#eixo .eco-I{
     background-image: url('img/manguezais.svg');
 }
 
-#eixo .eco-5{
+#eixo .eco-J{
     background-image: url('img/praias-arenosas.svg');
 }
 
-#eixo .eco-6{
+#eixo .eco-K{
+    background-image: url('img/praias-arenosas.svg');
+}
+
+#eixo .eco-L{
+    background-image: url('img/praias-arenosas.svg');
+}
+
+#eixo .eco-M{
+    background-image: url('img/praias-arenosas.svg');
+}
+
+#eixo .eco-N{
     background-image: url('img/praias-arenosas.svg');
 }
 

@@ -11,7 +11,7 @@
         const lenis = new Lenis()
 
         lenis.on('scroll', (e) => {
-        console.log(e)
+        //console.log(e)
         })
 
         function raf(time) {
@@ -498,11 +498,11 @@
                         <div class="select-titulo-triangle"></div>
                     </div>
                     <div class="select-drop select-drop-eixo" id="DropAbrirFecharEixo">
-                        <div class="select-drop-ul" onclick="SelectEixo('PESCA')">PESCA</div>
-                        <div class="select-drop-ul" onclick="SelectEixo('SOCIOAMBIENTAL')">SOCIOAMBIENTAL</div>
-                        <div class="select-drop-ul" onclick="SelectEixo('ECOLOGIA E BIOLOGIA')">ECOLOGIA E BIOLOGIA</div>
-                        <div class="select-drop-ul" onclick="SelectEixo('POLÍTICAS PÚBLICAS')">POLÍTICAS PÚBLICAS</div>
-                        <div class="select-drop-ul" onclick="SelectEixo('SAÚDE ÚNICA')">SAÚDE ÚNICA</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEixo('A', 'Pesca')">PESCA</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEixo('B', 'Socioambiental')">SOCIOAMBIENTAL</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEixo('C', 'Ecologia e Biologia')">ECOLOGIA E BIOLOGIA</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEixo('D', 'Políticas públicas')">POLÍTICAS PÚBLICAS</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEixo('E', 'Saúde única')">SAÚDE ÚNICA</div>
                     </div>
                 </div>
                 <div class="select select-eixo">
@@ -512,14 +512,14 @@
                         <div class="select-titulo-triangle"></div>
                     </div>
                     <div class="select-drop select-drop-eixo" id="DropAbrirFecharEixo">
-                        <div class="select-drop-ul" onclick="SelectEcossistemas('MAR ABERTO')">MAR ABERTO</div>
-                        <div class="select-drop-ul" onclick="SelectEcossistemas('CORAIS')">CORAIS</div>
-                        <div class="select-drop-ul" onclick="SelectEcossistemas('COSTÕES/POÇAS')">COSTÕES/POÇAS</div>
-                        <div class="select-drop-ul" onclick="SelectEcossistemas('PRAIAS ARENOSAS')">PRAIAS ARENOSAS</div>
-                        <div class="select-drop-ul" onclick="SelectEcossistemas('SISTEMAS LAGUNARES')">SISTEMAS LAGUNARES</div>
-                        <div class="select-drop-ul" onclick="SelectEcossistemas('MANGUEZAIS')">MANGUEZAIS</div>
-                        <div class="select-drop-ul" onclick="SelectEcossistemas('ESTUÁRIO/RIO')">ESTUÁRIO/RIO</div>
-                        <div class="select-drop-ul" onclick="SelectEcossistemas('SUBSTRATO INCONSOLIDADO')">SUBSTRATO INCONSOLIDADO</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEcossistemas('F', 'Mar aberto')">MAR ABERTO</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEcossistemas('G', 'Corais')">CORAIS</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEcossistemas('H', 'Costões/poças')">COSTÕES/POÇAS</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEcossistemas('I', 'Praias arenosas')">PRAIAS ARENOSAS</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEcossistemas('J', 'Sistemas lagunares')">SISTEMAS LAGUNARES</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEcossistemas('K', 'Manguezais')">MANGUEZAIS</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEcossistemas('L', 'Estuário/rio')">ESTUÁRIO/RIO</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroEcossistemas('M', 'Substrato')">SUBSTRATO INCONSOLIDADO</div>
                     </div>
                 </div>
                 <div class="select select-eixo filtrar-titulo-select-tres">
@@ -529,16 +529,18 @@
                         <div class="select-titulo-triangle"></div>
                     </div>
                     <div class="select-drop select-drop-eixo" id="DropAbrirFecharEixo">
-                        <div class="select-drop-ul" onclick="SelectAlternativas('BIODIGESTOR')">BIODIGESTOR</div>
-                        <div class="select-drop-ul" onclick="SelectAlternativas('GUIA DE CONSUMO CONSCIENTE')">GUIA DE CONSUMO CONSCIENTE</div>
-                        <div class="select-drop-ul" onclick="SelectAlternativas('TURISMO DE BASE COMUNITÁRIA')">TURISMO DE BASE COMUNITÁRIA</div>
-                        <div class="select-drop-ul" onclick="SelectAlternativas('PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS')">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div>
-                        <div class="select-drop-ul" onclick="SelectAlternativas('SISTEMAS LAGUNARES')">SISTEMAS LAGUNARES</div>
-                        <div class="select-drop-ul" onclick="SelectAlternativas('CONSUMO RESPONSÁVEL')">CONSUMO RESPONSÁVEL</div>
-                        <div class="select-drop-ul" onclick="SelectAlternativas('RECEITAS')">RECEITAS</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroAlternativas('N', 'Biodigestor')">BIODIGESTOR</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')">GUIA DE CONSUMO CONSCIENTE</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')">TURISMO DE BASE COMUNITÁRIA</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroAlternativas('R', 'Sistemas lagunares')">SISTEMAS LAGUNARES</div>
+                        <div class="select-drop-ul" onclick="FiltrarAdicionaNumeroAlternativas('S', 'Receitas')">RECEITAS</div>
                     </div>
                     
                 </div>
+                <input type="hidden" id="FiltrarNumerosEixo">
+                <input type="hidden" id="FiltrarNumerosEcossistemas">
+                <input type="hidden" id="FiltrarNumerosAlternativas">
                 <div class="filtrar-limpar" onclick="limpar()">
                     <img src="img/close-green.png" alt="">
                     LIMPAR
@@ -560,8 +562,19 @@
                                 <span class="eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-pesca">ECOSSISTEMAS</span>
                                 <div class="eixo-ecossistemas-titulo-linha">&nbsp;</div>
                                 <div class="eixo-ecossistemas-icon">
-                                    <div class="eixo-ecossistemas-icon-div eco-2">
-
+                                    <div class="eixo-ecossistemas-icon-div eco-F">
+                                        <div class="eixo-ecossistemas-icon-div-flag">
+                                            <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
+                                            MAR ABERTO
+                                        </div>
+                                    </div>
+                                    <div class="eixo-ecossistemas-icon-div eco-I">
+                                        <div class="eixo-ecossistemas-icon-div-flag">
+                                            <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
+                                            PRAIAS ARENOSAS
+                                        </div>
+                                    </div>
+                                    <div class="eixo-ecossistemas-icon-div eco-K">
                                         <div class="eixo-ecossistemas-icon-div-flag">
                                             <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
                                             MANGUEZAIS
@@ -583,10 +596,34 @@
                                 <span class="eixo-ecossistemas-titulo-eco  eixo-ecossistemas-titulo-eco-pesca">ECOSSISTEMAS</span>
                                 <div class="eixo-ecossistemas-titulo-linha">&nbsp;</div>
                                 <div class="eixo-ecossistemas-icon">
-                                    <div class="eixo-ecossistemas-icon-div eco-3">
+                                    <div class="eixo-ecossistemas-icon-div eco-F">
                                         <div class="eixo-ecossistemas-icon-div-flag">
                                             <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
-                                            MANGUEZAIS
+                                            MAR ABERTO
+                                        </div>
+                                    </div>
+                                    <div class="eixo-ecossistemas-icon-div eco-I">
+                                        <div class="eixo-ecossistemas-icon-div-flag">
+                                            <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
+                                            PRAIAS ARENOSAS 
+                                        </div>
+                                    </div>
+                                    <div class="eixo-ecossistemas-icon-div eco-J">
+                                        <div class="eixo-ecossistemas-icon-div-flag">
+                                            <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
+                                            SISTEMAS LAGUNARES
+                                        </div>
+                                    </div>
+                                    <div class="eixo-ecossistemas-icon-div eco-K">
+                                        <div class="eixo-ecossistemas-icon-div-flag">
+                                            <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
+                                            SISTEMAS LAGUNARES
+                                        </div>
+                                    </div>
+                                    <div class="eixo-ecossistemas-icon-div eco-L">
+                                        <div class="eixo-ecossistemas-icon-div-flag">
+                                            <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
+                                            ESTUÁRIO/RIO
                                         </div>
                                     </div>
                                 </div>
@@ -605,10 +642,22 @@
                                 <span class="eixo-ecossistemas-titulo-eco  eixo-ecossistemas-titulo-eco-pesca">ECOSSISTEMAS</span>
                                 <div class="eixo-ecossistemas-titulo-linha">&nbsp;</div>
                                 <div class="eixo-ecossistemas-icon">
-                                    <div class="eixo-ecossistemas-icon-div eco-4">
+                                    <div class="eixo-ecossistemas-icon-div eco-I">
                                         <div class="eixo-ecossistemas-icon-div-flag">
                                             <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
-                                            MANGUEZAIS
+                                            PRAIAS ARENOSAS 
+                                        </div>
+                                    </div>
+                                    <div class="eixo-ecossistemas-icon-div eco-K">
+                                        <div class="eixo-ecossistemas-icon-div-flag">
+                                            <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
+                                            SISTEMAS LAGUNARES
+                                        </div>
+                                    </div>
+                                    <div class="eixo-ecossistemas-icon-div eco-L">
+                                        <div class="eixo-ecossistemas-icon-div-flag">
+                                            <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
+                                            ESTUÁRIO/RIO
                                         </div>
                                     </div>
                                 </div>
@@ -627,10 +676,34 @@
                                 <span class="eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-pesca">ECOSSISTEMAS</span>
                                 <div class="eixo-ecossistemas-titulo-linha">&nbsp;</div>
                                 <div class="eixo-ecossistemas-icon">
-                                    <div class="eixo-ecossistemas-icon-div eco-1">
+                                    <div class="eixo-ecossistemas-icon-div eco-F">
                                         <div class="eixo-ecossistemas-icon-div-flag">
                                             <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
-                                            MANGUEZAIS
+                                            PRAIAS ARENOSAS 
+                                        </div>
+                                    </div>
+                                    <div class="eixo-ecossistemas-icon-div eco-I">
+                                        <div class="eixo-ecossistemas-icon-div-flag">
+                                            <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
+                                            PRAIAS ARENOSAS 
+                                        </div>
+                                    </div>
+                                    <div class="eixo-ecossistemas-icon-div eco-J">
+                                        <div class="eixo-ecossistemas-icon-div-flag">
+                                            <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
+                                            PRAIAS ARENOSAS 
+                                        </div>
+                                    </div>
+                                    <div class="eixo-ecossistemas-icon-div eco-K">
+                                        <div class="eixo-ecossistemas-icon-div-flag">
+                                            <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
+                                            SISTEMAS LAGUNARES
+                                        </div>
+                                    </div>
+                                    <div class="eixo-ecossistemas-icon-div eco-L">
+                                        <div class="eixo-ecossistemas-icon-div-flag">
+                                            <div class="eixo-ecossistemas-icon-div-flag-triangle"></div>
+                                            ESTUÁRIO/RIO
                                         </div>
                                     </div>
                                 </div>
