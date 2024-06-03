@@ -60,52 +60,77 @@ function FiltrarNumero(){
         }
 
         ////////////////////////
-        //////////////////ÍCONES
+        //////////////////TÍTULO
         ////////////////////////
+        var tituloFiltro = topicosFiltrarSplitID[0].split("-");
+        console.log(tituloFiltro)
+        var tituloFiltroExibir = "";
+        var tituloClasse = "";
+        if(tituloFiltro[0] == "A"){
+            tituloFiltroExibir = "PESCA";
+            tituloClasse = "pesca";
+        }
+        if(tituloFiltro[0] == "B"){
+            tituloFiltroExibir = "SOCIOAMBIENTAL";
+            tituloClasse = "socioambiental";
+        }
+        if(tituloFiltro[0] == "C"){
+            tituloFiltroExibir = "ECOLOGIA E BIOLOGIA";
+            tituloClasse = "ecologia";
+        }
+        if(tituloFiltro[0] == "D"){
+            tituloFiltroExibir = "POLÍTICAS PÚBLICAS";
+            tituloClasse = "politicas";
+        }
+        if(tituloFiltro[0] == "E"){
+            tituloFiltroExibir = "SAÚDE ÚNICA";
+            tituloClasse = "saude";
+        }
+        
         
         if(numerosTopicos[0] !== "" && numerosTopicos[1] == "" && numerosTopicos[2] == ""){
             if(topicosFiltrarSplitID[0].indexOf(numerosTopicos[0]) >= 0){
             
-                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-pesca\" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-pesca\">PESCA</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-pesca\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+filtrarIconesTexto+"</div></div></div></div></a>")
+                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-"+ tituloClasse +"\" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+filtrarIconesTexto+"</div></div></div></div></a>")
             }
         }
         
         if(numerosTopicos[0] == "" && numerosTopicos[1] !== "" && numerosTopicos[2] == ""){
             
             if(topicosFiltrarSplitID[0].indexOf(numerosTopicos[1]) >= 0){
-                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-pesca\" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-pesca\">PESCA</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-pesca\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+filtrarIconesTexto+"</div></div></div></div></a>")
+                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div- eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+filtrarIconesTexto+"</div></div></div></div></a>")
             }
         }
 
         if(numerosTopicos[0] == "" && numerosTopicos[1] == "" && numerosTopicos[2] !== ""){
             
             if(topicosFiltrarSplitID[0].indexOf(numerosTopicos[2]) >= 0){
-                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-pesca\" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-pesca\">PESCA</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-pesca\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
+                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
             }
         }
 
         if(numerosTopicos[0] !== "" && numerosTopicos[1] !== "" && numerosTopicos[2] == ""){
             if(topicosFiltrarSplitID[0].indexOf(numerosTopicos[0]) >= 0 && topicosFiltrarSplitID[0].indexOf(numerosTopicos[1]) >= 0){
                 
-                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-pesca\" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-pesca\">PESCA</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-pesca\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
+                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
             }
         }
 
         if(numerosTopicos[0] == "" && numerosTopicos[1] !== "" && numerosTopicos[2] !== ""){
             if(topicosFiltrarSplitID[0].indexOf(numerosTopicos[1]) >= 0 && topicosFiltrarSplitID[0].indexOf(numerosTopicos[2]) >= 0){
-                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-pesca\" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-pesca\">PESCA</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-pesca\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
+                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
             }
         }
 
         if(numerosTopicos[0] !== "" && numerosTopicos[1] == "" && numerosTopicos[2] !== ""){
             if(topicosFiltrarSplitID[0].indexOf(numerosTopicos[0]) >= 0 && topicosFiltrarSplitID[0].indexOf(numerosTopicos[2]) >= 0){
-                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-pesca\" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-pesca\">PESCA</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-pesca\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon>"+ filtrarIconesTexto +"</div></div></div></div></a>")
+                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon>"+ filtrarIconesTexto +"</div></div></div></div></a>")
             }
         }
         
         if(numerosTopicos[0] !== "" && numerosTopicos[1] !== "" && numerosTopicos[2] !== ""){
             if(topicosFiltrarSplitID[0].indexOf(numerosTopicos[0]) >= 0 && topicosFiltrarSplitID[0].indexOf(numerosTopicos[1]) >= 0 && topicosFiltrarSplitID[0].indexOf(numerosTopicos[2]) >= 0){
-                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-pesca\" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-pesca\">PESCA</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-pesca\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
+                $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
             }
         }
     }

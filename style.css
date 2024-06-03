@@ -989,6 +989,9 @@ html.lenis, html.lenis body {
     color: #183038;
     transition: 0.5s;
     transition-timing-function: ease-in-out;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 #eixo .eixo-div:hover .eixo-div-nome{
@@ -1194,6 +1197,10 @@ html.lenis, html.lenis body {
 
 #eixo .eixo-div-nome-socioambiental{
     width: 121px;
+}
+
+#eixo .eixo-div-nome-ecologia{
+    width: 115px;
 }
 
 #eixo .eixo-div-nome-ecologia{
