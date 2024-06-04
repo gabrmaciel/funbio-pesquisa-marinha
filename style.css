@@ -1136,7 +1136,8 @@ html.lenis, html.lenis body {
     padding: 2px 6px;
     padding-bottom: 0;
     display: none;
-    width: 100px;
+    clear: both;
+    white-space: nowrap;
 }
 
 #eixo .eixo-ecossistemas-icon-div-flag-triangle{
@@ -1156,7 +1157,7 @@ html.lenis, html.lenis body {
 }
 
 #eixo .eco-F{
-    background-image: url('img/praias-arenosas.svg');
+    background-image: url('img/Funbio_mar-aberto.svg');
 }
 
 #eixo .eco-G{
@@ -1168,7 +1169,7 @@ html.lenis, html.lenis body {
 }
 
 #eixo .eco-I{
-    background-image: url('img/manguezais.svg');
+    background-image: url('img/praias-arenosas.svg');
 }
 
 #eixo .eco-J{
@@ -1176,7 +1177,7 @@ html.lenis, html.lenis body {
 }
 
 #eixo .eco-K{
-    background-image: url('img/praias-arenosas.svg');
+    background-image: url('img/manguezais.svg');
 }
 
 #eixo .eco-L{
