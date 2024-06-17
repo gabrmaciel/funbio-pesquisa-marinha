@@ -1614,8 +1614,8 @@ html.lenis, html.lenis body {
 #projeto .projeto-proximo{
     float: left;
     width: 50%;
-    text-align: right;
-    padding-right: 40px;
+    text-align: left;
+    padding-left: 40px;
     font-family: 'Open Sans';
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -1625,11 +1625,12 @@ html.lenis, html.lenis body {
 #projeto .projeto-voltar{
     float: left;
     width: 50%;
-    padding-left: 40px;
+    padding-right: 40px;
     font-family: 'Open Sans';
     font-weight: 700;
     letter-spacing: 1.5px;
     text-decoration: underline;
+    text-align: right;
 }
 
 #projeto a{
