@@ -1127,7 +1127,7 @@ html.lenis, html.lenis body {
 
 #eixo .eixo-ecossistemas-icon-div-flag{
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     top: 10px;
     left: 44px;
     background-color: #FFF;
@@ -1173,7 +1173,7 @@ html.lenis, html.lenis body {
 }
 
 #eixo .eco-J{
-    background-image: url('img/praias-arenosas.svg');
+    background-image: url('img/sistema_lagunar.svg');
 }
 
 #eixo .eco-K{
@@ -1181,15 +1181,7 @@ html.lenis, html.lenis body {
 }
 
 #eixo .eco-L{
-    background-image: url('img/praias-arenosas.svg');
-}
-
-#eixo .eco-M{
-    background-image: url('img/praias-arenosas.svg');
-}
-
-#eixo .eco-N{
-    background-image: url('img/praias-arenosas.svg');
+    background-image: url('img/estuario.svg');
 }
 
 #eixo .eixo-div-nome-pesca{
