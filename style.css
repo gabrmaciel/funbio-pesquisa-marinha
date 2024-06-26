@@ -1402,7 +1402,7 @@ html.lenis, html.lenis body {
 #background{
     float: left;
     width: 100%;
-    max-width: 1540px;
+    max-width: 1920px;
     height: calc(100% - 125px);
     position: relative;
 }
