@@ -429,6 +429,18 @@ html.lenis, html.lenis body {
     position: relative;
 }
 
+#header .home{
+    background-image: url('img/house.png');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#header .home:hover{
+    background-image: url('img/house-click2.png');
+}
+
 #header .share{
     background-image: url('img/menu.svg');
     background-size: 100%;
@@ -715,6 +727,7 @@ html.lenis, html.lenis body {
     padding-top: 2px;
     font-size: 14px;
     position: relative;
+    cursor: pointer;
 }
 
 #filtrar .select-titulo-texto{
@@ -743,6 +756,7 @@ html.lenis, html.lenis body {
     width: 100%;
     background-color: #FFF;
     display: none;
+    opacity: 0;
 }
 
 #filtrar .select-drop-ul{
@@ -1388,17 +1402,18 @@ html.lenis, html.lenis body {
 #background{
     float: left;
     width: 100%;
+    max-width: 1540px;
     height: calc(100% - 125px);
     position: relative;
 }
 
 #background .bg{
     width: 100%;
-    height: 90%;
+    height: calc(100% + 21px);
     position: absolute;
     bottom: 0;
-    background-image: url('img/background-pagina.png');
-    background-size: 100%;
+    background-image: url('img/pagina-interna.png');
+    background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
 }

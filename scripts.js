@@ -22,7 +22,9 @@ function FiltrarNumero(){
     $("#SelectEixoTexto").val($("#FiltrarNumerosEixo").val());
     $("#SelectEcossistemasTexto").val($("#FiltrarNumerosEcossistemas").val());
     $("#SelectAlternativasTexto").val($("#FiltrarNumerosAlternativas").val());
-
+    $("#DropAbrirFecharEixo").css("opacity", "0");
+    $("#DropAbrirFecharEcossistemas").css("opacity", "0");
+    $("#DropAbrirFecharAlternativas").css("opacity", "0");
 
         var numeros = $("#FiltrarNumerosEixo").val()+"-"+$("#FiltrarNumerosEcossistemas").val()+"-"+$("#FiltrarNumerosAlternativas").val();
         
@@ -195,10 +197,11 @@ function FiltrarNumero(){
     setTimeout(eixo3FiltroVolta, 1025);
     setTimeout(eixo4Filtro, 0);
     setTimeout(eixo4FiltroVolta, 1000);
+    setTimeout(DropAbrirFechar, 1600);
 }
 
 function eixo1Filtro(){
-    $("#eixo-1").css("top", "-60px")
+    $("#eixo-1").css("top", "-40px")
 }
 
 function eixo1FiltroVolta(){
@@ -207,7 +210,7 @@ function eixo1FiltroVolta(){
 }
 
 function eixo2Filtro(){
-    $("#eixo-2").css("top", "-60px")
+    $("#eixo-2").css("top", "-40px")
     
 }
 
@@ -217,7 +220,7 @@ function eixo2FiltroVolta(){
 }
 
 function eixo3Filtro(){
-    $("#eixo-3").css("top", "-60px")
+    $("#eixo-3").css("top", "-40px")
 }
 
 function eixo3FiltroVolta(){
@@ -226,7 +229,7 @@ function eixo3FiltroVolta(){
 }
 
 function eixo4Filtro(){
-    $("#eixo-4").css("top", "-60px")
+    $("#eixo-4").css("top", "-40px")
 }
 
 function eixo4FiltroVolta(){
@@ -316,6 +319,10 @@ function abrir(){
     $("html, body").css("overflow", "hidden")
 }
 
+function home(){
+    window.location.href="index.html"
+}
+
 function compartilharAbrir(){
     $(".compartilhar-popup").css("display", "block")
     $(".compartilhar-abrir").css("display", "none")
@@ -392,16 +399,17 @@ $(document).ready(function(){
     
     
     setTimeout(eixo1, 300);
-    setTimeout(eixo1Volta, 1300);
+    setTimeout(eixo1Volta, 1250);
     setTimeout(eixo2, 200);
-    setTimeout(eixo2Volta, 1200);
+    setTimeout(eixo2Volta, 1150);
     setTimeout(eixo3, 100);
-    setTimeout(eixo3Volta, 1100);
+    setTimeout(eixo3Volta, 1050);
     setTimeout(eixo4, 0);
-    setTimeout(eixo4Volta, 1000);
+    setTimeout(eixo4Volta, 950);
+    setTimeout(DropAbrirFechar, 1600);
 
     function eixo1(){
-        $("#eixo-1").css("top", "-60px")
+        $("#eixo-1").css("top", "-40px")
     }
     
     function eixo1Volta(){
@@ -410,7 +418,7 @@ $(document).ready(function(){
     }
 
     function eixo2(){
-        $("#eixo-2").css("top", "-60px")
+        $("#eixo-2").css("top", "-40px")
     }
     
     function eixo2Volta(){
@@ -419,7 +427,7 @@ $(document).ready(function(){
     }
 
     function eixo3(){
-        $("#eixo-3").css("top", "-60px")
+        $("#eixo-3").css("top", "-40px")
     }
 
     function eixo3Volta(){
@@ -428,13 +436,15 @@ $(document).ready(function(){
     }
 
     function eixo4(){
-        $("#eixo-4").css("top", "-60px");
+        $("#eixo-4").css("top", "-40px");
     }
 
     function eixo4Volta(){
         $("#eixo-4").css("top", "0px")
-        $("#eixo-4").css("z-index", "0")
+        $("#eixo-4").css("z-index", "0");
     }
+
+   
 
     $("#eixo-5").css("top", "0px")
     $("#eixo-6").css("top", "0px")
@@ -452,3 +462,9 @@ $(document).ready(function(){
     $("#eixo-18").css("top", "0px")
     $("#eixo-19").css("top", "0px")
 });
+
+function DropAbrirFechar(){
+    $("#DropAbrirFecharEixo").css("opacity", "1")
+    $("#DropAbrirFecharEcossistemas").css("opacity", "1")
+    $("#DropAbrirFecharAlternativas").css("opacity", "1")
+}
