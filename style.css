@@ -1807,15 +1807,16 @@ html.lenis, html.lenis body {
     }
 
     #background .titulos-banco{
-        font-size: 40px;
+        font-size: 34px;
+        width: 330px;
     }
 
     #background .titulos-texto{
-        font-size: 14px;
+        font-size: 13px;
     }
 
     #background .titulos-nome{
-        font-size: 13.5px;
+        font-size: 13px;
     }
 
 
@@ -1866,6 +1867,10 @@ html.lenis, html.lenis body {
 
     #rodape-mobile{
         display: block;
+    }
+
+    #background{
+        height: calc(100% - 405px);
     }
     
 }
