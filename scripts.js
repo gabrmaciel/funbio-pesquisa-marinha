@@ -1,20 +1,93 @@
-var topicos = "A-F-I-K-O-P-Q-R-S|Cadeia produtiva ou cadeia de valores]A-F-H-I-J-K-L-O-R-19|Séries históricas, caracterização de desembarque, produtividade histórica]A-I-K-L-O-Q|Áreas de conflito]A-F-I-J-K-L|Artes de pesca e caracterização da pesca]B-I-J|Perfil socioeconômico]B-I-J-K|Mulheres na pesca]B-F-G-H-I-J-K-L-M-N-O-P-Q-R-S|Formação de pessoas, cursos e palestras]B-F-G-H-I-J-K-L-N-O-P-Q|Conscientização Ambiental]B-F-I-J-K-L|Conhecimento tradicional]C-H-L-M-Q|Espécies invasoras]C-F-G-H-I-J-K-L-O-Q-R|Teia trófica]C-F-H-I-J-K-L-R|Movimentos e rotas migratórias, limites geográfico, ecologia espacial]C-F-G-H-I-J-K-L-Q-R|Tamanho populacional, estrutura populacional, parametros idade e crescimento]D-F-I-J-K-L-O-P-Q-R|Ações voltadas para as Unidades de Conservação]D-F-I-J-K-L-M-O-P-Q-R|Ações voltadas para o governo]D-F-J-K-L|Sistematização de licenciamentos Petróleo e Gás, Estado da arte PEAs e PCAPs]E-F-J-K-L-M-O-Q-R|Poluentes e contaminantes]E-F-G-H-I-J-K-L-O-P-Q-R|Impactos/Mudanças climáticas]E-F-O|Parasitos (doenças)]";
+var topicos = "A-F-I-K-O-P-Q-R-S-T|Cadeia produtiva ou cadeia de valores]A-F-H-I-J-K-L-O-R|Séries históricas, caracterização de desembarque, produtividade histórica]A-I-K-L-O-Q|Áreas de conflito]A-F-I-J-K-L|Artes de pesca e caracterização da pesca]B-I-J|Perfil socioeconômico]B-I-J-K|Mulheres na pesca]B-F-G-H-I-J-K-L-M-N-O-P-Q-R-S|Formação de pessoas, cursos e palestras]B-F-G-H-I-J-K-L-N-O-P-Q|Conscientização Ambiental]B-F-I-J-K-L|Conhecimento tradicional]C-H-L-M-Q|Espécies invasoras]C-F-G-H-I-J-K-L-O-Q-R|Teia trófica]C-F-H-I-J-K-L-R|Movimentos e rotas migratórias, limites geográfico, ecologia espacial]C-F-G-H-I-J-K-L-Q-R|Tamanho populacional, estrutura populacional, parametros idade e crescimento]D-F-I-J-K-L-O-P-Q-R|Ações voltadas para as Unidades de Conservação]D-F-I-J-K-L-M-O-P-Q-R|Ações voltadas para o governo]D-F-J-K-L|Sistematização de licenciamentos Petróleo e Gás, Estado da arte PEAs e PCAPs]E-F-J-K-L-M-O-Q-R|Poluentes e contaminantes]E-F-G-H-I-J-K-L-O-P-Q-R|Impactos/Mudanças climáticas]E-F-O|Parasitos (doenças)]";
 
 function FiltrarAdicionaNumeroEixo(id, text){
     $("#FiltrarNumerosEixo").val(id);
     $("#SelectEixoTexto").html(text.toUpperCase());
+    $("#InputHiddenEixo").val(text);
+    if(text == "Pesca"){
+        $("#DropAbrirFecharEcossistemas").html("")
+        $("#DropAbrirFecharEcossistemas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('F', 'Mar aberto')\">MAR ABERTO</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('H', 'Costões/poças')\">COSTÕES/POÇAS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('I', 'Praias arenosas')\">PRAIAS ARENOSAS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('J', 'Sistemas lagunares')\">SISTEMAS LAGUNARES</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('K', 'Manguezais')\">MANGUEZAIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('L', 'Estuário/rio')\">ESTUÁRIO/RIO</div>")
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('S', 'Receitas')\">RECEITAS</div>")
+    }
+    if(text == "Ecologia e Biologia"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('S', 'Receitas')\">RECEITAS</div>")
+    }
+    if(text == "Políticas públicas"){
+        $("#DropAbrirFecharEcossistemas").html("")
+        $("#DropAbrirFecharEcossistemas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('F', 'Mar aberto')\">MAR ABERTO</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('I', 'Praias arenosas')\">PRAIAS ARENOSAS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('J', 'Sistemas lagunares')\">SISTEMAS LAGUNARES</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('K', 'Manguezais')\">MANGUEZAIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('L', 'Estuário/rio')\">ESTUÁRIO/RIO</div>")
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('S', 'Receitas')\">RECEITAS</div>")
+    }
+    if(text == "Saúde única"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('S', 'Receitas')\">RECEITAS</div>")
+    }
     FiltrarNumero()
 }
 
 function FiltrarAdicionaNumeroEcossistemas(id, text){
     $("#FiltrarNumerosEcossistemas").val(id);
     $("#SelectEcossistemasTexto").html(text.toUpperCase());
+    $("#InputHiddenEcossistemas").val(text);
+    $("#DropAbrirFecharAlternativas").html("")
+    $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('N', 'Biodigestor')\">BIODIGESTOR</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('R', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('S', 'Receitas')\">RECEITAS</div>");
+    if($("#InputHiddenEixo").val() == "Pesca" && $("#InputHiddenEcossistemas").val() == "Mar aberto"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('S', 'Receitas')\">RECEITAS</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Pesca" && $("#InputHiddenEcossistemas").val() == "Praias arenosas"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('S', 'Receitas')\">RECEITAS</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Pesca" && $("#InputHiddenEcossistemas").val() == "Costões/poças"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('R', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Pesca" && $("#InputHiddenEcossistemas").val() == "Sistemas lagunares"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Pesca" && $("#InputHiddenEcossistemas").val() == "Manguezais"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('S', 'Receitas')\">RECEITAS</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Pesca" && $("#InputHiddenEcossistemas").val() == "Estuário/rio"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Ecologia e Biologia" && $("#InputHiddenEcossistemas").val() == "Corais"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Ecologia e Biologia" && $("#InputHiddenEcossistemas").val() == "Praias arenosas"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Ecologia e Biologia" && $("#InputHiddenEcossistemas").val() == "Sistemas lagunares"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Ecologia e Biologia" && $("#InputHiddenEcossistemas").val() == "Estuário/rio"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Ecologia e Biologia" && $("#InputHiddenEcossistemas").val() == "Manguezais"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Políticas públicas" && $("#InputHiddenEcossistemas").val() == "Manguezais"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div>")
+    }
     FiltrarNumero()
 }
 
 function FiltrarAdicionaNumeroAlternativas(id, text){
     $("#FiltrarNumerosAlternativas").val(id);
     $("#SelectAlternativasTexto").html(text.toUpperCase());
+    $("#InputHiddenAlternativas").val(text);
     FiltrarNumero()
 }
 
@@ -25,6 +98,7 @@ function FiltrarNumero(){
     $("#DropAbrirFecharEixo").css("opacity", "0");
     $("#DropAbrirFecharEcossistemas").css("opacity", "0");
     $("#DropAbrirFecharAlternativas").css("opacity", "0");
+    $(".eixo-result-contador").css("display", "block");
 
         var numeros = $("#FiltrarNumerosEixo").val()+"-"+$("#FiltrarNumerosEcossistemas").val()+"-"+$("#FiltrarNumerosAlternativas").val();
         
@@ -37,8 +111,11 @@ function FiltrarNumero(){
         var topicosFiltrar = topicos;
         var topicosFiltrarSplit = topicosFiltrar.split("]");
         var contadorFiltrar = 0;
+        var contResult = 0;
+
     
-        $("#eixo .body-inner-div").html("");
+        $(".eixo-result-inicial").html("");
+        $(".eixo-result-filtrar").html("");
     
         for (let i = 0; i < topicosFiltrarSplit.length; i++) {
             var topicosFiltrarSplitID = topicosFiltrarSplit[i].split("|");
@@ -49,6 +126,8 @@ function FiltrarNumero(){
             var filtrarIcones = topicosFiltrarSplitID[0].split("-");
             var filtrarIconesTexto = "";
             for (let x = 0; x < filtrarIcones.length; x++) {
+                contResult = contResult + 1;
+
                 if(filtrarIcones[x] == "F"){
                     filtrarIconesTexto = filtrarIconesTexto + "<div class='eixo-ecossistemas-icon-div eco-F\'><div class=\'eixo-ecossistemas-icon-div-flag\'><div class=\'eixo-ecossistemas-icon-div-flag-triangle\'></div>MAR ABERTO</div></div>";
                 }
@@ -69,9 +148,6 @@ function FiltrarNumero(){
                 }
                 if(filtrarIcones[x] == "L"){
                     filtrarIconesTexto =  filtrarIconesTexto + "<div class=\'eixo-ecossistemas-icon-div eco-L\'><div class=\'eixo-ecossistemas-icon-div-flag\'><div class=\'eixo-ecossistemas-icon-div-flag-triangle\'></div>ESTUÁRIO/RIO</div></div>";
-                }
-                if(filtrarIcones[x] == "M"){
-                    filtrarIconesTexto =  filtrarIconesTexto + "<div class=\'eixo-ecossistemas-icon-div eco-L\'><div class=\'eixo-ecossistemas-icon-div-flag\'><div class=\'eixo-ecossistemas-icon-div-flag-triangle\'></div>SUBSTRATO CONSOLIDADO</div></div>";
                 }
             }
     
@@ -110,7 +186,7 @@ function FiltrarNumero(){
     
                     contadorFiltrar = contadorFiltrar + 1;
                 
-                    $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +"\" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+filtrarIconesTexto+"</div></div></div></div></a>");
+                    $(".eixo-result-filtrar").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +"\" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+filtrarIconesTexto+"</div></div></div></div></a>");
                 }
             }
             
@@ -119,7 +195,7 @@ function FiltrarNumero(){
     
                     contadorFiltrar = contadorFiltrar + 1;
     
-                    $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div- eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+filtrarIconesTexto+"</div></div></div></div></a>")
+                    $(".eixo-result-filtrar").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div- eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+filtrarIconesTexto+"</div></div></div></div></a>")
                 }
             }
     
@@ -128,7 +204,7 @@ function FiltrarNumero(){
     
                     contadorFiltrar = contadorFiltrar + 1;
     
-                    $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
+                    $(".eixo-result-filtrar").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
                 }
             }
     
@@ -137,7 +213,7 @@ function FiltrarNumero(){
                     
                     contadorFiltrar = contadorFiltrar + 1;
     
-                    $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
+                    $(".eixo-result-filtrar").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
                 }
             }
     
@@ -146,7 +222,7 @@ function FiltrarNumero(){
                     
                     contadorFiltrar = contadorFiltrar + 1;
                     
-                    $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
+                    $(".eixo-result-filtrar").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
                 }
             }
     
@@ -155,7 +231,7 @@ function FiltrarNumero(){
                     
                     contadorFiltrar = contadorFiltrar + 1;
     
-                    $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon>"+ filtrarIconesTexto +"</div></div></div></div></a>")
+                    $(".eixo-result-filtrar").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon>"+ filtrarIconesTexto +"</div></div></div></div></a>")
                 }
             }
             
@@ -164,7 +240,7 @@ function FiltrarNumero(){
     
                     contadorFiltrar = contadorFiltrar + 1;
     
-                    $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
+                    $(".eixo-result-filtrar").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>")
                 }
             }
 
@@ -174,12 +250,13 @@ function FiltrarNumero(){
                 if(typeof topicosFiltrarSplitID[1] === "undefined"){
                 }else{
                     console.log(topicosFiltrarSplitID[1])
-                    $("#eixo .body-inner-div").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>");
+                    $(".eixo-result-filtrar").append("<a href=\"pagina.html\"><div id=\"eixo-"+ contadorFiltrar +"\" class=\"eixo-div eixo-div-"+ tituloClasse +" id=\"eixo-1\"><div class=\"eixo-div-img\"></div><div class=\"eixo-div-nome eixo-div-nome-"+ tituloClasse +"\">"+ tituloFiltroExibir +"</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">"+ topicosFiltrarSplitID[1] +"</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-"+ tituloClasse +"\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\">"+ filtrarIconesTexto +"</div></div></div></div></a>");
                 }
             }
         }
-    
 
+    $(".eixo-result-contador").html("&nbsp;");
+    $(".eixo-result-contador").append("<div class='eixo-contador'>Mostrando "+ contadorFiltrar +" resultados de 20</div>");
     $(".filtrar-limpar").css("display", "block");
 
     //////////////////////
@@ -372,7 +449,14 @@ function limpar(){
     $("#SelectEixoTexto").html("EIXO TEMÁTICO");
     $("#SelectEcossistemasTexto").html("ECOSSISTEMAS");
     $("#SelectAlternativasTexto").html("AÇÕES");
+    $("#DropAbrirFecharEcossistemas").html("");
+    $("#DropAbrirFecharEcossistemas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('F', 'Mar aberto')\">MAR ABERTO</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('G', 'Corais')\">CORAIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('H', 'Costões/poças')\">COSTÕES/POÇAS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('I', 'Praias arenosas')\">PRAIAS ARENOSAS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('J', 'Sistemas lagunares')\">SISTEMAS LAGUNARES</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('K', 'Manguezais')\">MANGUEZAIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEcossistemas('L', 'Estuário/rio')\">ESTUÁRIO/RIO</div>");
+    $("#DropAbrirFecharAlternativas").html("");
+    $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('N', 'Biodigestor')\">BIODIGESTOR</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('S', 'Receitas')\">RECEITAS</div>");
+    
     FiltrarNumero();
+
+    $(".eixo-result-contador").css("display", "none");
 
 }
 
