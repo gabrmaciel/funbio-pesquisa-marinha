@@ -430,7 +430,7 @@ html.lenis, html.lenis body {
 }
 
 #header .home{
-    background-image: url('img/house.png');
+    background-image: url('img/home1.svg');
     background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -438,7 +438,7 @@ html.lenis, html.lenis body {
 }
 
 #header .home:hover{
-    background-image: url('img/house-click2.png');
+    background-image: url('img/home2.svg');
 }
 
 #header .share{
@@ -644,7 +644,7 @@ html.lenis, html.lenis body {
 }
 
 #filtrar .filtrar-corpo{
-    width: 710px;
+    width: 720px;
     height: 100%;
     position: relative;
 }
@@ -653,10 +653,12 @@ html.lenis, html.lenis body {
     float: left;
     display: flex;
     align-items: center;
+    width: 80px;
     height: 100%;
     font-size: 16px;
     color: #D6F3E3;
     margin-right: 20px;
+    position: relative;
 }
 
 #filtrar .filtrar-titulo-select{
@@ -959,7 +961,7 @@ html.lenis, html.lenis body {
 }
 
 #eixo .eixo-div-pesca{
-    background: #1B3014;
+    background: #183038;
 }
 
 #eixo .eixo-div-socioambiental{
@@ -967,11 +969,11 @@ html.lenis, html.lenis body {
 }
 
 #eixo .eixo-div-ecologia{
-    background: #3E1D19;
+    background: #341838;
 }
 
 #eixo .eixo-div-politicas{
-    background: #252C28;
+    background: #11323B;
 }
 
 #eixo .eixo-div-saude{
@@ -1095,7 +1097,7 @@ html.lenis, html.lenis body {
 }
 
 #eixo .eixo-ecossistemas-titulo-eco-pesca{
-    background-color: #1B3014;
+    background-color: #183038;
 }
 
 #eixo .eixo-ecossistemas-titulo-eco-socioambiental{
@@ -1103,11 +1105,11 @@ html.lenis, html.lenis body {
 }
 
 #eixo .eixo-ecossistemas-titulo-eco-ecologia{
-    background-color: #3E1D19;
+    background-color: #341838;
 }
 
 #eixo .eixo-ecossistemas-titulo-eco-politicas{
-    background-color: #252C28;
+    background-color: #11323B;
 }
 
 #eixo .eixo-ecossistemas-titulo-eco-saude{
@@ -1222,13 +1224,11 @@ html.lenis, html.lenis body {
     width: 95px;
 }
 
-#eixo .eixo-result-contador{
-    float: left;
-    width: 100%;
-    height: 100%;
-    min-height: 20px;
-    margin-bottom: 20px;
-    color: #222;
+.eixo-result-contador{
+    width: 87px;
+    position: absolute;
+    top: 68px;
+    font-size: 11px;
 }
 
 #rodape{

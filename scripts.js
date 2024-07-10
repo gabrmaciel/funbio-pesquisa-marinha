@@ -77,9 +77,53 @@ function FiltrarAdicionaNumeroEcossistemas(id, text){
         $("#DropAbrirFecharAlternativas").html("")
         $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div>")
     }
+    if($("#InputHiddenEixo").val() == "Políticas públicas" && $("#InputHiddenEcossistemas").val() == "Mar aberto"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Políticas públicas" && $("#InputHiddenEcossistemas").val() == "Praias arenosas"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Políticas públicas" && $("#InputHiddenEcossistemas").val() == "Sistemas lagunares"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div>")
+    }
     if($("#InputHiddenEixo").val() == "Políticas públicas" && $("#InputHiddenEcossistemas").val() == "Manguezais"){
         $("#DropAbrirFecharAlternativas").html("")
         $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Políticas públicas" && $("#InputHiddenEcossistemas").val() == "Estuário/rio"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Saúde pública" && $("#InputHiddenEcossistemas").val() == "Mar aberto"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Saúde pública" && $("#InputHiddenEcossistemas").val() == "Corais"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Saúde pública" && $("#InputHiddenEcossistemas").val() == "Costões/poças"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Saúde pública" && $("#InputHiddenEcossistemas").val() == "Praias arenosas"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Saúde pública" && $("#InputHiddenEcossistemas").val() == "Sistemas lagunares"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Saúde pública" && $("#InputHiddenEcossistemas").val() == "Manguezais"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div>")
+    }
+    if($("#InputHiddenEixo").val() == "Saúde pública" && $("#InputHiddenEcossistemas").val() == "Estuário/rio"){
+        $("#DropAbrirFecharAlternativas").html("")
+        $("#DropAbrirFecharAlternativas").html("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('O', 'Guia de consumo consciente')\">GUIA DE CONSUMO CONSCIENTE</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('P', 'Turismo de base comunitária')\">TURISMO DE BASE COMUNITÁRIA</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Práticas de pesca mais sustentáveis')\">PRÁTICAS DE PESCA MAIS SUSTENTÁVEIS</div><div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroAlternativas('Q', 'Consumo responsável')\">CONSUMO RESPONSÁVEL</div>")
     }
     FiltrarNumero()
 }
@@ -255,8 +299,8 @@ function FiltrarNumero(){
             }
         }
 
-    $(".eixo-result-contador").html("&nbsp;");
-    $(".eixo-result-contador").append("<div class='eixo-contador'>Mostrando "+ contadorFiltrar +" resultados de 20</div>");
+    $(".eixo-result-contador").html("");
+    $(".eixo-result-contador").append("Exibindo "+ contadorFiltrar +" de 20");
     $(".filtrar-limpar").css("display", "block");
 
     //////////////////////
