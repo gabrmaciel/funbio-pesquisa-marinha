@@ -1952,4 +1952,12 @@ html.lenis, html.lenis body {
     #eixo .eixo-div-nome-ecologia{
         width: 100%;
     }
+
+    #filtrar .select-titulo{
+        font-size: 13px;
+    }
+
+    #filtrar .select-drop-ul{
+        font-size: 13px;
+    }
 }
