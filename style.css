@@ -1948,4 +1948,8 @@ html.lenis, html.lenis body {
         margin-right: 5px;
         background-size: 21px 21px;
     }
+
+    #eixo .eixo-div-nome-ecologia{
+        width: 100%;
+    }
 }
