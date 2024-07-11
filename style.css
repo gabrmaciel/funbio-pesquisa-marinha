@@ -1960,4 +1960,13 @@ html.lenis, html.lenis body {
     #filtrar .select-drop-ul{
         font-size: 13px;
     }
+
+    #filtrar .filtrar-limpar{
+        top: 30px;
+        right: 2px;
+    }
+
+    .eixo-result-contador{
+        top: 63px;
+    }
 }
