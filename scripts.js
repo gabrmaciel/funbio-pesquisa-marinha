@@ -688,15 +688,7 @@ function SelectEcossistemas(tipo){
 }
 
 function limpar(){
-    // $(".eixo-div-corpo").css("display", "block");
-    // $(".eixo-div-busca").css("display", "none");
-    // $(".filtrar-limpar").css("display", "none");
-    // $("#InputEixoTexto").val("EIXO TEMÁTICO");
-    // $("#InputEcossistemasTexto").val("ECOSSISTEMAS");
-    // $("#InputAlternativasTexto").val("ALTERNATIVAS");
-    // $("#SelectEixoTexto").html("EIXO TEMÁTICO");
-    // $("#SelectEcossistemasTexto").html("ECOSSISTEMAS");
-    // $("#SelectAlternativasTexto").html("ALTERNATIVAS");
+    
 
     $("#FiltrarNumerosEixo").val("");
     $("#FiltrarNumerosEcossistemas").val("");
@@ -712,6 +704,7 @@ function limpar(){
     FiltrarNumero();
 
     $(".eixo-result-contador").css("display", "none");
+    $("#filtrar .filtrar-limpar").css("display", "none")
 
 }
 
