@@ -1941,4 +1941,11 @@ html.lenis, html.lenis body {
     #eixo .eixo-div-nome-pesca{
         font-size: 11px;
     }
+
+    #eixo .eixo-ecossistemas-icon-div{
+        width: 21px;
+        height: 24px;
+        margin-right: 5px;
+        background-size: 21px 21px;
+    }
 }
