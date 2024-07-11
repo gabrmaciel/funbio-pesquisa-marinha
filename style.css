@@ -768,6 +768,9 @@ html.lenis, html.lenis body {
     padding-top: 9px;
     border-bottom: 1px solid #777;
     font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
 }
 
 #filtrar .select-drop-ul:hover{
@@ -1854,7 +1857,7 @@ html.lenis, html.lenis body {
     }
 
     #filtrar .select{
-        width: calc(33.33% - 10px);
+        width: calc(33.33% - 7px);
         margin-top: 14px;
     }
    
