@@ -1408,6 +1408,14 @@ html.lenis, html.lenis body {
     font-family: 'Open Sans';
 }
 
+.background-mobile{
+    display: none;
+}
+
+.background-mobile-2{
+    display: none;
+}
+
 #background{
     float: left;
     width: 100%;
@@ -1425,6 +1433,10 @@ html.lenis, html.lenis body {
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
+}
+
+#background .bg-2{
+    background-image: none;
 }
 
 #background .titulos{
@@ -1904,5 +1916,18 @@ html.lenis, html.lenis body {
 
     .menu-ul-top-subtitulo{
         font-size: 3vh;
+    }
+
+    .background-desktop{
+        display: none;
+    }
+
+    .background-mobile{
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .background-mobile-2{
+        display: block;
     }
 }
