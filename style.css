@@ -1934,4 +1934,8 @@ html.lenis, html.lenis body {
     .eixo-result-filtrar{
         width: calc(100% + 15px);
     }
+
+    #eixo .eixo-div-nome-pesca{
+        font-size: 11px;
+    }
 }
