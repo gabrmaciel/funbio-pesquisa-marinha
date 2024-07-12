@@ -972,15 +972,15 @@ html.lenis, html.lenis body {
 }
 
 #eixo .eixo-div-ecologia{
-    background: #341838;
+    background: #3E1D19;
 }
 
 #eixo .eixo-div-politicas{
-    background: #11323B;
+    background: #341838;
 }
 
 #eixo .eixo-div-saude{
-    background: #1B3A42;
+    background: #11323B;
 }
 
 #eixo .eixo-div-img{
@@ -1108,15 +1108,15 @@ html.lenis, html.lenis body {
 }
 
 #eixo .eixo-ecossistemas-titulo-eco-ecologia{
-    background-color: #341838;
+    background-color: #3E1D19;
 }
 
 #eixo .eixo-ecossistemas-titulo-eco-politicas{
-    background-color: #11323B;
+    background-color: #341838;
 }
 
 #eixo .eixo-ecossistemas-titulo-eco-saude{
-    background-color: #1B3A42;
+    background-color: #11323B;
 }
 
 #eixo .eixo-ecossistemas-titulo-linha{
