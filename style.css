@@ -1972,3 +1972,10 @@ html.lenis, html.lenis body {
         top: 63px;
     }
 }
+
+@media only screen and (max-width: 430px) {
+    .background-mobile-2{
+        display: block;
+        height: 250px !important;
+    }
+}
