@@ -1928,10 +1928,12 @@ html.lenis, html.lenis body {
     .background-mobile{
         display: block;
         margin-bottom: 40px;
+        height: 298px !important;
     }
 
     .background-mobile-2{
         display: block;
+        height: 298px !important;
     }
 
     .eixo-result-filtrar{
