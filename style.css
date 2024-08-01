@@ -1203,6 +1203,10 @@ html.lenis, html.lenis body {
     background-image: url('img/estuario.svg');
 }
 
+#eixo .eco-M{
+    background-image: url('img/estuario.svg');
+}
+
 #eixo .eixo-div-nome-pesca{
     width: 50px;
 }
