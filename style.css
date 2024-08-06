@@ -1427,7 +1427,7 @@ html.lenis, html.lenis body {
     float: left;
     width: 100%;
     max-width: 1920px;
-    height: calc(100% - 245px);
+    height: calc(100% - 305px);
     position: relative;
 }
 
@@ -1436,7 +1436,7 @@ html.lenis, html.lenis body {
     height: calc(100% + 21px);
     position: absolute;
     bottom: 0;
-    background-image: url('img/pagina-interna.png');
+    background-image: url('img/interna_novo.png');
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -1937,7 +1937,7 @@ html.lenis, html.lenis body {
 
     .background-mobile-2{
         display: block;
-        height: 298px !important;
+        height: 118px !important;
     }
 
     .eixo-result-filtrar{
