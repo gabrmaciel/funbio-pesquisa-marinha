@@ -1437,7 +1437,7 @@ html.lenis, html.lenis body {
     bottom: 0;
     background-image: url('img/pagina-esquerda-novo.png');
     background-size: cover;
-    background-position: bottom left;
+    background-position: center left;
     background-repeat: no-repeat;
 }
 
