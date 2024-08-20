@@ -1436,7 +1436,7 @@ html.lenis, html.lenis body {
     height: calc(100% + 21px);
     position: absolute;
     bottom: 0;
-    background-image: url('img/interna_novo.png');
+    background-image: url('img/pagina-esquerda-novo.png');
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
