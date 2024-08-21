@@ -14,6 +14,11 @@
     src: url(Open-Sans.ttf);
 }
 
+/*
+COR RESERVA PARA FUNDO DA PÁGINA INTERNA
+background-color: #DFF0E7
+*/
+
 *{
     margin: 0;
     padding: 0;

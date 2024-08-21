@@ -1440,7 +1440,7 @@ html.lenis, html.lenis body {
     height: calc(100% + 21px);
     position: absolute;
     bottom: 0;
-    background-image: url('img/pagina-esquerda-novo.png');
+    background-image: url('img/interna/pesca.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1942,6 +1942,10 @@ html.lenis, html.lenis body {
     .background-mobile-2{
         display: block;
         height: 118px !important;
+    }
+
+    .bg-mobile{
+        background-image: url('img/interna/pesca-mobile.png') !important;
     }
 
     .eixo-result-filtrar{
