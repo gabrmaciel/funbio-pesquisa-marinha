@@ -1592,6 +1592,8 @@ html.lenis, html.lenis body {
 #topico .topico-entrega{
     float: left;
     width: 33.33%;
+    height: 120px;
+    font-size: 18px;
     margin-top: 40px;
 }
 
@@ -1630,7 +1632,7 @@ html.lenis, html.lenis body {
     background-color: #36421B;
 }
 
-#topico .topico-entrega-topo{
+#topico .topico-entrega-topo-2{
     float: left;
     width: 100%;
     font-size: 18px;
