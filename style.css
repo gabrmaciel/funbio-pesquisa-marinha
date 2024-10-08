@@ -1587,6 +1587,35 @@ html.lenis, html.lenis body {
     padding-bottom: 25px;
     font-size: 16px;
     color: #183038;
+    position: relative
+}
+
+#topico .topico-div-corpo-texto p{
+    float: left;
+    width: 100%;
+    margin-left: 26px;
+    margin-top: -10px;
+}
+
+#topico .topico-div-corpo-texto-marker{
+    position: absolute;
+    top: 6px;
+    left: -14px;
+    width: 4px;
+    height: 4px;
+    background: #183038;
+    border-radius: 100%;
+}
+
+#topico .topico-div-corpo-texto-marker-marker{
+    position: relative;
+    top: 0;
+    left: 14px;
+    width: 4px;
+    height: 4px;
+    background: transparent;
+    border: 1px solid #183038;
+    border-radius: 100%;
 }
 
 #topico .topico-entrega{
@@ -1598,6 +1627,8 @@ html.lenis, html.lenis body {
 #topico .topico-entrega-corpo{
     float: left;
     width: 70%;
+    height: 120px;
+    overflow: hidden;
 }
 
 #topico .topico-entrega-topo{
@@ -1605,6 +1636,11 @@ html.lenis, html.lenis body {
     width: 100%;
     color: #183038;
     margin-bottom: 8px;
+    text-decoration: underline
+}
+
+.topico-entrega-topo-up{
+    text-transform: uppercase;
 }
 
 #topico .topico-entrega-ver{

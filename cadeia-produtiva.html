@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    <title>Funbio - Cadeia produtiva</title>
+</head>
+<body>
+    <div id="menu">
+        <div class="fechar" onclick="fechar()"></div>
+        <div class="menu">
+            <div class="menu-ul" id="ul-1">
+                <div class="menu-ul-topo">
+                    <div class="menu-ul-subtitulo">EIXO #1</div>
+                    <div class="menu-ul-titulo">PESCA</div>
+                </div>
+                <div class="sub-menu" id="sub-menu-1" style="top: 20%">
+                    <div class="sub-menu-ul" id="sub-1">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">1</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Cadeia produtiva ou cadeia de valores</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-2">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">2</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Séries históricas, caracterização de desembarque, produtividade histórica</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-3">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">3</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Áreas de conflito</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-4">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">4</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Artes de pesca e caracterização da pesca</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-ul" id="ul-2">
+                <div class="menu-ul-topo">
+                    <div class="menu-ul-subtitulo">EIXO #2</div>
+                    <div class="menu-ul-titulo">SOCIOAMBIENTAL</div>
+                </div>
+                <div class="sub-menu" id="sub-menu-2" style="top: 20%">
+                    <div class="sub-menu-ul" id="sub-1">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">1</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Perfil socioeconomico</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-2">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">2</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Mulheres na pesca</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-3">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">3</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Formação de pessoas, cursos e palestras</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-4">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">4</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Conscientização ambiental</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-4">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">5</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Conhecimento tradicional</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-ul" id="ul-3">
+                <div class="menu-ul-topo">
+                    <div class="menu-ul-subtitulo">EIXO #3</div>
+                    <div class="menu-ul-titulo">ECOLOGIA E BIOLOGIA</div>
+                </div>
+                <div class="sub-menu" id="sub-menu-3" style="top: 20%">
+                    <div class="sub-menu-ul" id="sub-1">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">1</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Espécies invasoras</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-2">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">2</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Teia trófica</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-3">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">3</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Movimentos e rotas migratórias, limites geográfico, ecologia espacial</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-4">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">4</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Tamanho populacional, estrutura populacional, parametros idade e crescimento</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-ul" id="ul-4">
+                <div class="menu-ul-topo">
+                    <div class="menu-ul-subtitulo">EIXO #4</div>
+                    <div class="menu-ul-titulo">POLÍTICAS PÚBLICAS</div>
+                </div>
+                <div class="sub-menu" id="sub-menu-4" style="top: 20%">
+                    <div class="sub-menu-ul" id="sub-1">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">1</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Ações voltadas para as Unidades de Conservação</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-2">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">2</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Ações voltadas para o governo</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-3">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">3</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Sistematização de licenciamentos Petróleo e Gás, Estado da arte PEAs e PCAPs</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-ul" id="ul-5">
+                <div class="menu-ul-topo">
+                    <div class="menu-ul-subtitulo">EIXO #5</div>
+                    <div class="menu-ul-titulo">SAÚDE ÚNICA</div>
+                </div>
+                <div class="sub-menu" id="sub-menu-5" style="top: 20%">
+                    <div class="sub-menu-ul" id="sub-1">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">1</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Poluentes e contaminantes</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-2">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">2</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Impactos/Mudanças climáticas</div>
+                    </div>
+                    <div class="sub-menu-ul" id="sub-3">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num">3</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto">Parasitos (doenças)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-mobile">
+            <div class="menu-mobile-ul">
+                <div class="menu-ul-fechar" id="menu-fechar-1" onclick="fechaMenu(1)">&nbsp;</div>
+                <div class="menu-ul-top" id="menu-ul-top-1" onclick="abreFechaMenu(1)">
+                    <div class="menu-ul-top-titulo">EIXO #1</div>
+                    <div class="menu-ul-top-subtitulo">PESCA
+                        <img src="img/arrow-down.png" id="menu-mobile-1">
+                    </div>
+                </div>
+                <div class="menu-submenu" id="menu-submenu-1">
+                    <div class="menu-submenu-corpo">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">1</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Cadeia produtiva ou cadeia de valores</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">2</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Séries históricas, caracterização de desembarque, produtividade histórica</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">3</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Áreas de conflito</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">4</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Artes de pesca e caracterização da pesca</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="menu-mobile-ul">
+                <div class="menu-ul-fechar" id="menu-fechar-2" onclick="fechaMenu(2)">&nbsp;</div>
+                <div class="menu-ul-top" id="menu-ul-top-2" onclick="abreFechaMenu(2)">
+                    <div class="menu-ul-top-titulo">EIXO #2</div>
+                    <div class="menu-ul-top-subtitulo">SOCIOAMBIENTAL
+                        <img src="img/arrow-down.png"  id="menu-mobile-2">
+                    </div>
+                </div>
+                <div class="menu-submenu" id="menu-submenu-2">
+                    <div class="menu-submenu-corpo">
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">1</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Perfil socioeconomico</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">2</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Mulheres na pesca</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">3</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Formação de pessoas, cursos e palestras</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">4</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Conscientização Ambiental</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">5</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Conhecimento tradicional</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-mobile-ul">
+                <div class="menu-ul-fechar" id="menu-fechar-3" onclick="fechaMenu(3)">&nbsp;</div>
+                <div class="menu-ul-top" id="menu-ul-top-3" onclick="abreFechaMenu(3)">
+                    <div class="menu-ul-top-titulo">EIXO #3</div>
+                    <div class="menu-ul-top-subtitulo">ECOLOGIA E BIOLOGIA
+                        <img src="img/arrow-down.png" id="menu-mobile-3">
+                    </div>
+                </div>
+                <div class="menu-submenu" id="menu-submenu-3">
+                    <div class="menu-submenu-corpo">    
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">1</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Espécies invasoras</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">2</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Teia trófica</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">3</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Movimentos e rotas migratórias, limites geográfico, ecologia espacial</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">4</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Tamanho populacional, estrutura populacional, parametros idade e crescimento</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-mobile-ul">
+                <div class="menu-ul-fechar" id="menu-fechar-4" onclick="fechaMenu(4)">&nbsp;</div>
+                <div class="menu-ul-top" id="menu-ul-top-4" onclick="abreFechaMenu(4)">
+                    <div class="menu-ul-top-titulo">EIXO #4</div>
+                    <div class="menu-ul-top-subtitulo">POLÍTICAS PÚBLICAS
+                        <img src="img/arrow-down.png"  id="menu-mobile-4">
+                    </div>
+                </div>
+                <div class="menu-submenu" id="menu-submenu-4">
+                    <div class="menu-submenu-corpo">  
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">1</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Ações voltadas para as Unidades de Conservação</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">2</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Ações voltadas para o governo</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">3</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Sistematização de licenciamentos Petróleo e Gás, Estado da arte PEAs e PCAPs</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">4</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Inserir a sociedade natemática de bioinvasão, conservação</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-mobile-ul">
+                <div class="menu-ul-fechar" id="menu-fechar-5" onclick="fechaMenu(5)">&nbsp;</div>
+                <div class="menu-ul-top" id="menu-ul-top-5" onclick="abreFechaMenu(5)">
+                    <div class="menu-ul-top-titulo">EIXO #5</div>
+                    <div class="menu-ul-top-subtitulo">SAÚDE ÚNICA
+                        <img src="img/arrow-down.png"  id="menu-mobile-5">
+                    </div>
+                </div>
+                <div class="menu-submenu" id="menu-submenu-5">
+                    <div class="menu-submenu-corpo">  
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">1</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Poluentes e contaminantes</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">2</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Impactos/Mudanças climáticas</div>
+                        <div class="sub-menu-ul-numeros">
+                            <div class="sub-menu-ul-numeros-num sub-menu-ul-numeros-num-mobile">3</div>
+                            <div class="sub-ul-numeros-linha"></div>
+                        </div>
+                        <div class="sub-menu-ul-texto sub-menu-ul-texto-mobile">Parasitos (doenças)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="compartilhar">
+        <div class="fechar" onclick="fecharCompartilhar()"></div>
+        <div class="compartilhar-popup-titulo">COMPARTILHE</div>
+        <div class="compartilhar-popup-subtitulo">Lorem ipsum dolor sit amet, consecte adipiscing elit. Fusce non arcu urna.</div>
+        <div class="compartilhar-popup-div compartilhar-popup-div-link" onclick="copiarTexto(event)">
+            <div class="compartilhar-popup-div-icon icon-link">&nbsp;</div>
+            <div class="compartilhar-popup-div-titulo">COPIAR LINK</div>
+        </div>
+        <a href="mailto:funbio@funbio.org">
+            <div class="compartilhar-popup-div compartilhar-popup-div-email">
+                <div class="compartilhar-popup-div-icon icon-email">&nbsp;</div>
+                <div class="compartilhar-popup-div-titulo">EMAIL</div>
+            </div>
+        </a>
+        <a href="https://www.facebook.com/share.php?u=funbio.org.br&quote=your+text+goes+here" target="_blank">
+            <div class="compartilhar-popup-div compartilhar-popup-div-facebook">
+                <div class="compartilhar-popup-div-icon icon-facebook">&nbsp;</div>
+                <div class="compartilhar-popup-div-titulo">FACEBOOK</div>
+            </div>
+        </a>
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=O novo site da Funbio está disponível! Informações sobre pesca, dados científicos e muito mais: http://funbio.org.br " data-size="large" target="_blank">
+            <div class="compartilhar-popup-div compartilhar-popup-div-twitter">
+                <div class="compartilhar-popup-div-icon icon-twitter">&nbsp;</div>
+                <div class="compartilhar-popup-div-titulo">X</div>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=funbio.org.br"target="_blank" title="Compartilhar no LinkedIn">
+            <div class="compartilhar-popup-div compartilhar-popup-div-linkedin">
+                <div class="compartilhar-popup-div-icon icon-linkedin">&nbsp;</div>
+                <div class="compartilhar-popup-div-titulo compartilhar-popup-div-titulo-linkedin">LINKEDIN</div>
+            </div>
+        </a>
+        <div class="compartilhar-popup-div compartilhar-popup-div-whatsapp" onclick="whatsapp()">
+            <div class="compartilhar-popup-div-icon icon-whatsapp">&nbsp;</div>
+            <div class="compartilhar-popup-div-titulo">WHATSAPP</div>
+        </div>
+        
+    </div>
+    <div id="widget">
+        <div class="widget-linha">
+            <div class="widget-div" id="area-transferencia">
+                Link copiado para a área de transferência
+            </div>
+        </div>
+        
+    </div>
+    <div id="header">
+        <div class="body-inner-div">
+            <div class="body-inner-div-header">
+                <a href="index.html"><img src="img/logo.png" class="header-img"></a>
+                <div class="header-icons">
+                    <div class="header-icons-share home" onclick="home()"></div>
+                    <div class="header-icons-share compartilhar-mobile" onclick="compartilharMobileAbrir()"></div>
+                    <div class="header-icons-share compartilhar">
+                        <div class="compartilhar-abrir"></div>
+                        <div class="compartilhar-fechar" onclick="compartilharFechar()"></div>
+                        <div class="compartilhar-popup">
+                            <div class="compartilhar-eixo">&nbsp;</div>
+                            <div class="arrow-up"></div>
+                            <div class="compartilhar-popup-titulo">COMPARTILHE</div>
+                            <div class="compartilhar-popup-subtitulo">Lorem ipsum dolor sit amet, consecte adipiscing elit. Fusce non arcu urna.</div>
+                            <div class="compartilhar-popup-div compartilhar-popup-div-link" onclick="copiarTexto(event)">
+                                <div class="compartilhar-popup-div-icon icon-link">&nbsp;</div>
+                                <div class="compartilhar-popup-div-titulo">COPIAR LINK</div>
+                            </div>
+                            <a href="mailto:funbio@funbio.org">
+                                <div class="compartilhar-popup-div compartilhar-popup-div-email">
+                                    <div class="compartilhar-popup-div-icon icon-email">&nbsp;</div>
+                                    <div class="compartilhar-popup-div-titulo">EMAIL</div>
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/share.php?u=funbio.org.br&quote=your+text+goes+here" target="_blank">
+                                <div class="compartilhar-popup-div compartilhar-popup-div-facebook">
+                                    <div class="compartilhar-popup-div-icon  icon-facebook">&nbsp;</div>
+                                    <div class="compartilhar-popup-div-titulo">FACEBOOK</div>
+                                </div>
+                            </a>
+                            <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=O novo site da Funbio está disponível! Informações sobre pesca, dados científicos e muito mais: http://funbio.org.br " data-size="large" target="_blank">
+                                <div class="compartilhar-popup-div compartilhar-popup-div-twitter">
+                                    <div class="compartilhar-popup-div-icon  icon-twitter">&nbsp;</div>
+                                    <div class="compartilhar-popup-div-titulo">X</div>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=funbio.org.br"target="_blank" title="Compartilhar no LinkedIn">
+                                <div class="compartilhar-popup-div compartilhar-popup-div-linkedin">
+                                    <div class="compartilhar-popup-div-icon  icon-linkedin">&nbsp;</div>
+                                    <div class="compartilhar-popup-div-titulo">LINKEDIN</div>
+                                </div>
+                            </a>
+                            <div class="compartilhar-popup-div compartilhar-popup-div-whatsapp" onclick="whatsapp()">
+                                <div class="compartilhar-popup-div-icon icon-whatsapp">&nbsp;</div>
+                                <div class="compartilhar-popup-div-titulo">WHATSAPP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-icons-share share" onclick="abrir()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="background" class="background-mobile">
+        <div class="bg-2"></div>
+        <div class="body-inner-div">
+            <div class="titulos">
+                <div class="titulos-nome">PESCA</div>
+                <div class="titulos-espaco">&nbsp;</div>
+                <div class="titulos-banco">CADEIA PRODUTIVA OU CADEIA DE VALORES</div>
+                <div class="titulos-espaco">&nbsp;</div>
+                <div class="titulos-texto"><b>Texto contextualizando |</b> Sob alto risco de desaparecerem da natureza, as toninhas são animais fundamentais para a preservação do litoral do Brasil, do Uruguai e da Argentina.</div>
+            </div>
+        </div>
+    </div>
+    <div id="background" class="background-mobile-2">
+        <div class="bg"></div>
+        <div class="body-inner-div">
+        </div>
+    </div>
+    <div id="background" class="background-desktop">
+        <div class="bg"></div>
+        <div class="body-inner-div">
+            <div class="titulos">
+                <div class="titulos-nome">PESCA</div>
+                <div class="titulos-espaco">&nbsp;</div>
+                <div class="titulos-banco" style="width: 600px">CADEIA PRODUTIVA OU CADEIA DE VALORES</div>
+                <div class="titulos-espaco">&nbsp;</div>
+                <div class="titulos-texto"><b>Texto contextualizando |</b> Sob alto risco de desaparecerem da natureza, as toninhas são animais fundamentais para a preservação do litoral do Brasil, do Uruguai e da Argentina.</div>
+            </div>
+        </div>
+    </div>
+    <div id="topico">
+        <div class="body-inner-div">
+            <div class="topico-div">
+                <div class="topico-div-titulo">
+                    <div class="topico-div-titulo-span">Visão Geral</div>
+                    <div class="topico-div-titulo-abre-fecha topico-abre-fecha-laranja-corpo-select" id="topico-abre-fecha-corpo-1">
+                        <div class="topico-div-titulo-abre-fecha-maior-menor topico-abre-fecha-laranja" id="topico-abre-fecha-1" onclick="abre_fecha(1)">
+                            <div class="topico-maior-menor" id="topico-maior-menor-1">-</div>
+                        </div>
+                        <div class="topico-fecha" id="topico-fecha-1" onclick="fecha(1)" style="display: block"></div>
+                    </div>
+                </div>
+                <div class="topico-div-corpo" id="topico-corpo-1" style="display:block">
+                    <div class="topico-div-corpo-titulo">Ações conservadas para as unidades de conservação</div>
+                    <div class="topico-div-corpo-texto">
+                        <span>A cadeia produtiva do pescado desempenha um papel crucial na economia, englobando desde a captura do pescado até sua chegada ao consumidor final. A atividade pesqueira começa com a coleta de diferentes espécies, seguida pelo beneficiamento, como limpeza, filetagem, congelamento e embalagem, que garantem a qualidade e a segurança do alimento. O pescado é então comercializado, gerando emprego e renda, especialmente em comunidades costeiras, além de fornecer uma importante fonte de proteína para a dieta humana. </span>
+                        <span>Além do impacto econômico, a cadeia de valores do pescado é fundamental para a sustentabilidade ambiental e social. A gestão eficiente da pesca pode mitigar impactos sobre os ecossistemas marinhos, promovendo a conservação da biodiversidade. A educação do consumidor sobre escolhas sustentáveis é vital para influenciar positivamente toda a cadeia produtiva, contribuindo para a saúde do oceano, segurança alimentar e desenvolvimento socioeconômico.</span>
+                        <span>No caso específico do estudo realizado no litoral do Rio de Janeiro, foi desenvolvido um modelo de equilíbrio ecológico e socioeconômico para a atividade pesqueira. A pesquisa mapeou a cadeia produtiva, destacando a importância da pesca do robalo nos ambientes de manguezal da Baía de Guanabara e investigando a captura do bonito-listrado. Foram levantados dados sobre a sazonalidade, gestão e taxas de captura, permitindo uma visão abrangente dos impactos ambientais e econômicos frente às mudanças na atividade pesqueira, além de identificar os custos e desafios de cada elo da cadeia.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="topico-div">
+                <div class="topico-div-titulo">
+                    <div class="topico-div-titulo-span">Principais achados</div>
+                    <div class="topico-div-titulo-abre-fecha" id="topico-abre-fecha-corpo-2">
+                        <div class="topico-div-titulo-abre-fecha-maior-menor" id="topico-abre-fecha-2" onclick="abre_fecha(2)">
+                            <div class="topico-maior-menor" id="topico-maior-menor-2">+</div>
+                        </div>
+                        <div class="topico-fecha" id="topico-fecha-2" onclick="fecha(2)"></div>
+                    </div>
+                </div>
+                <div class="topico-div-corpo" id="topico-corpo-2">
+                    <div class="topico-div-corpo-titulo">Ações conservadas para as unidades de conservação</div>
+                    <div class="topico-div-corpo-texto">
+                        <span><div class="topico-div-corpo-texto-marker"></div>A cadeia produtiva do bonito-listrado no estado do Rio de Janeiro sofre com a sazonalidade da disponibilidade de isca-viva para capturá-lo e da própria espécie,  com processo de reestruturação produtiva da indústria, a diminuição e obsolescência tecnológica das embarcações, e a instabilidade e lacunas de gestão e de políticas de fomento ao setor pesqueiro.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker"></div>Valorização da pesquisa sobre recursos naturais: é preciso fazer uma análise interdisciplinar compreender a gestão, disponibilidade, sazonalidade e taxa de captura do recurso pesqueiro em determinadas regiões.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker"></div>Geração de modelo de equilíbrio ecológico e socioeconômico para a atividade pesqueira no litoral norte do Rio de Janeiro, possibilitando a visualização dos impactos ecológicos, sociais e econômicos frente a alterações ambientais e da atividade pesqueira.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker"></div>Mapeamento da cadeia produtiva da atividade pesqueira no norte do Rio de Janeiro, com a geração de informações sobre a produção pesqueira, custo das pescarias e de revenda de pescado provenientes de cada elo das cadeias de valores da pesca, incluindo a pescaria de robalo no ambiente manguezal e lagunar da Baía de Guanabara. Tal caracterização permitiu a identificação dos gastos para pesca esportiva do robalo no ambiente manguezal da Baía de Guanabara.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker"></div>Os dados permitiram estimar a quantidade de pessoas associadas a cada elo, bem como, gerar estimativas de valores vinculados a cada um deles na pesca do robalo no ambiente manguezal da Baía de Guanabara.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="topico-div">
+                <div class="topico-div-titulo">
+                    <div class="topico-div-titulo-span">Objetivos alcançados</div>
+                    <div class="topico-div-titulo-abre-fecha" id="topico-abre-fecha-corpo-3">
+                        <div class="topico-div-titulo-abre-fecha-maior-menor" id="topico-abre-fecha-3" onclick="abre_fecha(3)">
+                            <div class="topico-maior-menor" id="topico-maior-menor-3">+</div>
+                            
+                        </div>
+                        <div class="topico-fecha" id="topico-fecha-3" onclick="fecha(3)"></div>
+                    </div>
+                </div>
+                <div class="topico-div-corpo" id="topico-corpo-3">
+                    <div class="topico-div-corpo-titulo">Ações conservadas para as unidades de conservação</div>
+                    <div class="topico-div-corpo-texto">
+                        <span><div class="topico-div-corpo-texto-marker"></div>Sistematização dos dados sobre a contribuição socioecônomica da cadeia produtiva do bonito-listrado para o estado do Rio de Janeiro.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker"></div>Avaliar o impacto econômico social e ambiental da cadeia produtiva do bonito-listrado em comparação com as cadeias produtivas de aves e suínos.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker"></div>Macromapeamento da cadeia produtiva do bonito-listrado.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker"></div>Criação de indicadores para avaliação da cadeia produtiva do bonito-listrado.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker"></div>Criação de modelo da cadeia de valores da pesca, delineando os atores e os atributos econômicos envolvidos na atividade pesqueira no norte do Rio de Janeiro, a partir da atualização dos modelos ecotróficos disponíveis na literatura.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker"></div>Avaliar a importância da pesca do robalo.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker"></div>Geração de dados de captura das principais pescarias realizadas no Norte Fluminense.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="topico-div">
+                <div class="topico-div-titulo">
+                    <div class="topico-div-titulo-span">Entregas e resultados</div>
+                    <div class="topico-div-titulo-abre-fecha" id="topico-abre-fecha-corpo-4">
+                        <div class="topico-div-titulo-abre-fecha-maior-menor" id="topico-abre-fecha-4" onclick="abre_fecha(4)">
+                            <div class="topico-maior-menor" id="topico-maior-menor-4">+</div> 
+                        </div>
+                        <div class="topico-fecha" id="topico-fecha-4" onclick="fecha(4)"></div>
+                    </div>
+                </div>
+                <div class="topico-div-corpo" id="topico-corpo-4">
+                    <div class="topico-div-corpo-titulo">Ações conservadas para as unidades de conservação</div>
+                    <div class="topico-div-corpo-texto">
+                        <span><div class="topico-div-corpo-texto-marker"></div>Caracterização, compreensão e sistematização de dados a respeito da estrutura e da dinâmica da cadeia produtiva do Bonito no RJ.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker-marker"></div>
+                            <p>Levantamento e sistematização de dados sobre a força de trabalho da cadeia do Bonito no RJ, e a respeito da produção e processamento do pescado.</p>
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker-marker"></div>
+                            <p>Discussão e reflexão sobre os limites e desafios desta cadeia com foco nos conflitos e negociações entre os atores envolvidos.</p>
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker-marker"></div>
+                            <p>Desenho da cadeia de valor do Bonito-listrado.</p>
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker-marker"></div>
+                            <p>Análise de indicador socioeconômico do Bonito-listrado.</p>
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker-marker"></div>
+                            <p>Identificação dos tipos de mercado do Bonito-listrado e análise do indicador AAS.</p>
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker-marker"></div>
+                            <p>Descrição das cadeias produtivas de frango e suínos em comparação com o bonito-listrado.</p>
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker"></div>Criação de modelo da cadeia de valores da pesca, delineando os atores e os atributos econômicos envolvidos na atividade pesqueira no norte do Rio de Janeiro, a partir da atualização dos modelos elaborados a partir de dados disponíveis na literatura.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker-marker"></div>
+                            <p>Um modelo de equilíbrio ecológico foi gerado para a região de estudo.</p>
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker-marker"></div>
+                            <p>Foram levantadas informações anteriores ao projeto sobre a logística da atividade pesqueira.</p>
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker-marker"></div>
+                            <p>Foram realizadas 204 entrevistas com os elos da cadeia produtiva: produtor, atravessador, processador, vendedor e consumidor final.</p>
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker-marker"></div>
+                            <p>A cadeia de valores da pesca foi mapeada e um modelo socioeconômico gerado para a região de estudo.</p>
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker"></div>Avaliar a importância da pesca do robalo no ambiente manguezal.
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker-marker"></div>
+                            <p>Elos das cadeias de valores associadas às pescarias comerciais e esportivas direcionadas aos robalos.</p>
+                        </span>
+                        <span><div class="topico-div-corpo-texto-marker-marker"></div>
+                            <p>Valores agregados estimados.</p>
+                        </span>
+                    </div>
+                    <a href="https://www.funbio.org.br/wp-content/uploads/2020/08/Projeto-Bonito-listrado-10082020.pdf" target="_blank">
+                        <div class="topico-entrega">
+                            <div class="topico-entrega-corpo">
+                                <span class="topico-entrega-topo" style="text-decoration:underline">RELATÓRIO BONITO <img src="img/compartilhar.png" style="width: 20px;position: relative;top: 4px; left: 3px;"></span>
+                                <span class="topico-entrega-topo">Relatório Projeto Bonito-Listrado</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://ethnobioconservation.com/index.php/ebc/article/view/542" target="_blank">
+                        <div class="topico-entrega">
+                            <div class="topico-entrega-corpo">
+                                <span class="topico-entrega-topo" style="text-decoration:underline">ARTIGO PESCARIAS <img src="img/compartilhar.png" style="width: 20px;position: relative;top: 4px; left: 3px;"></span>
+                                <span class="topico-entrega-topo">Artigo sobre Conhecimento Local em Pescarias (Ethnobioconservation)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="http://hdl.handle.net/10183/176917" target="_blank">
+                        <div class="topico-entrega">
+                            <div class="topico-entrega-corpo">
+                                <span class="topico-entrega-topo">DISSERTAÇÃO CADEIA <img src="img/compartilhar.png" style="width: 20px;position: relative;top: 4px; left: 3px;"></span>
+                                <span class="topico-entrega-topo">Dissertação UFRGS - Cadeia Produtiva do Bonito</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://lume.ufrgs.br/handle/10183/216448" target="_blank">
+                        <div class="topico-entrega">
+                            <div class="topico-entrega-corpo">
+                                <span class="topico-entrega-topo">TESE GESTÃO <img src="img/compartilhar.png" style="width: 20px;position: relative;top: 4px; left: 3px;"></span>
+                                <span class="topico-entrega-topo">Tese UFRGS - Gestão Pesqueira</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.researchgate.net/publication/357606198_Dinamica_socioeconomica_e_conflitos_sociais_na_cadeia_produtiva_do_bonito-listrado_no_estado_do_Rio_de_Janeiro" target="_blank">
+                        <div class="topico-entrega">
+                            <div class="topico-entrega-corpo">
+                                <span class="topico-entrega-topo">DINÂMICA SOCIOECONÔMICA <img src="img/compartilhar.png" style="width: 20px;position: relative;top: 4px; left: 3px;"></span>
+                                <span class="topico-entrega-topo">Dinâmica Socioeconômica do Bonito-listrado no RJ</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1L83o0Coy71gG1MDH5jBZxlnEKTNEccie/view" target="_blank">
+                        <div class="topico-entrega">
+                            <div class="topico-entrega-corpo">
+                                <span class="topico-entrega-topo">PLANO DE MANEJO <img src="img/compartilhar.png" style="width: 20px;position: relative;top: 4px; left: 3px;"></span>
+                                <span class="topico-entrega-topo">Plano de Manejo do Bonito-listrado</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.funbio.org.br/wp-content/uploads/2021/03/Guia-de-Consumo-Sustentavel-de-Pescado-Marinho-1.pdf" target="_blank">
+                        <div class="topico-entrega">
+                            <div class="topico-entrega-corpo">
+                                <span class="topico-entrega-topo">GUIA CONSUMO <img src="img/compartilhar.png" style="width: 20px;position: relative;top: 4px; left: 3px;"></span>
+                                <span class="topico-entrega-topo">Guia de Consumo Sustentável de Pescado Marinho</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=OFkqsOU-Htk" target="_blank">
+                        <div class="topico-entrega">
+                            <div class="topico-entrega-corpo">
+                                <span class="topico-entrega-topo">VÍDEO CADEIA <img src="img/compartilhar.png" style="width: 20px;position: relative;top: 4px; left: 3px;"></span>
+                                <span class="topico-entrega-topo">Vídeo sobre Cadeia Produtiva do Bonito-listrado</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://tacfrade.org.br/subprojeto-bonito/" target="_blank">
+                        <div class="topico-entrega">
+                            <div class="topico-entrega-corpo">
+                                <span class="topico-entrega-topo">SUBPROJETO BONITO <img src="img/compartilhar.png" style="width: 20px;position: relative;top: 4px; left: 3px;"></span>
+                                <span class="topico-entrega-topo">SUBPROJETO BONITO Subprojeto do Pesquisa Marinha - Bonito</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://tacfrade.org.br/subprojeto-bonito/" target="_blank">
+                        <div class="topico-entrega">
+                            <div class="topico-entrega-corpo">
+                                <span class="topico-entrega-topo">SUBPROJETO RECURSOS PESQUEIROS <img src="img/compartilhar.png" style="width: 20px;position: relative;top: 4px; left: 3px;"></span>
+                                <span class="topico-entrega-topo">Subprojeto do Pesquisa Marinha - Recursos Pesqueiros</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://tacfrade.org.br/subprojeto-guanamangue/" target="_blank">
+                        <div class="topico-entrega">
+                            <div class="topico-entrega-corpo">
+                                <span class="topico-entrega-topo">SUBPROJETO GUANAMANGUE <img src="img/compartilhar.png" style="width: 20px;position: relative;top: 4px; left: 3px;"></span>
+                                <span class="topico-entrega-topo">Subprojeto do Pesquisa Marinha - Guanamangue </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projeto">
+        <div class="body-inner-div">
+            <a href="index.html"><div class="projeto-voltar">VOLTAR PARA A LISTA</div></a>
+            <a href="pagina.html"><div class="projeto-proximo">PRÓXIMO</div></a>
+            
+        </div>
+    </div>
+   
+    <div id="rodape">
+        <div class="body-inner-div">
+            <div class="rodape-site-mobile">
+                <span>A realização do Projeto Pesquisa Marinha e Pesqueira é uma medida compensatória estabelecida pelo Termo de Ajustamento de Conduta de responsabilidade da empresa PRIO, conduzido pelo Ministério Público Federal – MPF/RJ.</span>
+                <div class="rodape-site-datadot rodape-site-datadot-mobile">Um site <a class="datadot-a-mobile" href="https://datadotestudio.com/" target="_blank">datadot</a></div>
+            </div>
+            <div class="rodape-logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="rodape-alga">
+                <img src="img/alga.png" alt="">
+            </div>
+            <div class="rodape-site">
+                <span>A realização do Projeto Pesquisa Marinha e Pesqueira é uma medida compensatória estabelecida pelo Termo de Ajustamento de Conduta de responsabilidade da empresa PRIO, conduzido pelo Ministério Público Federal – MPF/RJ.</span>
+                <div class="rodape-site-datadot">Um site <a href="https://datadotestudio.com/" target="_blank">datadot</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="rodape-mobile">
+        <div class="body-inner-div">
+            <div class="rodape-mobile-coral">
+                <div class="rodape-mobile-coral-linha">&nbsp;</div>
+                <img src="img/alga-mobile.png" alt="" srcset="">
+            </div>
+            <div class="rodape-mobile-logo">
+                <img src="img/pesquisa-marinha.png" alt="" srcset="">
+            </div>
+            <div class="rodape-mobile-text">
+                <span>A realização do Projeto Pesquisa Marinha e Pesqueira é uma medida compensatória estabelecida pelo Termo de Ajustamento de Conduta de responsabilidade da empresa PRIO, conduzido pelo Ministério Público Federal – MPF/RJ.</span>
+            </div>
+            <div class="rodape-mobile-datadot">
+                <span>um site <a href="https://datadotestudio.com/" target="_blank" class="rodape-mobile-datadot-a">datadot</a></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("#ul-1").hover(function(){
+            $("#sub-menu-1").css("opacity", "1");
+            $("#ul-2").css("opacity", "0.2");
+            $("#ul-3").css("opacity", "0.2");
+            $("#ul-4").css("opacity", "0.2");
+            $("#ul-5").css("opacity", "0.2");
+        }, function(){
+            $(".sub-menu").css("opacity", "0");
+            $(".menu-ul").css("opacity", "1");
+        });
+        $("#ul-2").hover(function(){
+            $("#sub-menu-2").css("opacity", "1");
+            $("#ul-1").css("opacity", "0.2");
+            $("#ul-3").css("opacity", "0.2");
+            $("#ul-4").css("opacity", "0.2");
+            $("#ul-5").css("opacity", "0.2");
+        }, function(){
+            $(".sub-menu").css("opacity", "0");
+            $(".menu-ul").css("opacity", "1");
+        });
+        $("#ul-3").hover(function(){
+            $("#sub-menu-3").css("opacity", "1");
+            $("#ul-1").css("opacity", "0.2");
+            $("#ul-2").css("opacity", "0.2");
+            $("#ul-4").css("opacity", "0.2");
+            $("#ul-5").css("opacity", "0.2");
+        }, function(){
+            $(".sub-menu").css("opacity", "0");
+            $(".menu-ul").css("opacity", "1");
+        });
+        $("#ul-4").hover(function(){
+            $("#sub-menu-4").css("opacity", "1");
+            $("#ul-1").css("opacity", "0.2");
+            $("#ul-2").css("opacity", "0.2");
+            $("#ul-3").css("opacity", "0.2");
+            $("#ul-5").css("opacity", "0.2");
+        }, function(){
+            $(".sub-menu").css("opacity", "0");
+            $(".menu-ul").css("opacity", "1");
+        });
+        $("#ul-5").hover(function(){
+            $("#sub-menu-5").css("opacity", "1");
+            $("#ul-1").css("opacity", "0.2");
+            $("#ul-2").css("opacity", "0.2");
+            $("#ul-3").css("opacity", "0.2");
+            $("#ul-4").css("opacity", "0.2");
+        }, function(){
+            $(".sub-menu").css("opacity", "0");
+            $(".menu-ul").css("opacity", "1");
+        });
+
+        $("#topico-abre-fecha-corpo-1").hover(function(){
+            $("#topico-abre-fecha-corpo-1").addClass("topico-abre-fecha-laranja-corpo");
+        }, function(){
+            $("#topico-abre-fecha-corpo-1").removeClass("topico-abre-fecha-laranja-corpo");
+        });
+        
+        $("#topico-abre-fecha-corpo-2").hover(function(){
+            $("#topico-abre-fecha-corpo-2").addClass("topico-abre-fecha-laranja-corpo");
+        }, function(){
+            $("#topico-abre-fecha-corpo-2").removeClass("topico-abre-fecha-laranja-corpo");
+        });
+
+        $("#topico-abre-fecha-corpo-3").hover(function(){
+            $("#topico-abre-fecha-corpo-3").addClass("topico-abre-fecha-laranja-corpo");
+        }, function(){
+            $("#topico-abre-fecha-corpo-3").removeClass("topico-abre-fecha-laranja-corpo");
+        });
+
+    </script>
+</body>
+</html>
