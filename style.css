@@ -1446,6 +1446,234 @@ html.lenis, html.lenis body {
     background-repeat: no-repeat;
 }
 
+.BgCadeiaProdutiva{
+    background-image: url('img/interna/cadeia-produtiva.png') !important;
+}
+
+.BgCadeiaProdutivaMobile{
+    background-image: url('img/interna/cadeia-produtiva-mobile.png') !important;
+}
+
+.BgCadeiaProdutivaCard{
+    background-image: url('img/interna/cadeia-produtiva-card.png') !important;
+}
+
+.BgSerieHistorica{
+    background-image: url('img/interna/series-historicas.png') !important;
+}
+
+.BgSerieHistoricaMobile{
+    background-image: url('img/interna/series-historicas-mobile.png') !important;
+}
+
+.BgSerieHistoricaCard{
+    background-image: url('img/interna/series-historicas-card.png') !important; 
+}
+
+.BgAreasConflito{
+    background-image: url('img/interna/areas-conflito.png') !important;
+}
+
+.BgAreasConflitoMobile{
+    background-image: url('img/interna/areas-conflito.png') !important;
+}
+
+.BgAreasConflitoCard{
+    background-image: url('img/interna/areas-conflito-card.png') !important;
+}
+
+.BgArtesPesca{
+    background-image: url('img/interna/artes-pesca.png') !important;
+}
+
+.BgArtesPescaMobile{
+    background-image: url('img/interna/artes-pesca.png') !important;
+}
+
+.BgArtesPescaCard{
+    background-image: url('img/interna/artes-pesca-card.png') !important;
+}
+
+.BgPerfilSocioeconomico{
+    background-image: url('img/interna/perfil-socioeconomico.png') !important;
+}
+
+.BgPerfilSocioeconomicoMobile{
+    background-image: url('img/interna/perfil-socioeconomico.png') !important;
+}
+
+.BgPerfilSocioeconomicoCard{
+    background-image: url('img/interna/perfil-socioeconomico-card.png') !important;
+}
+
+.BgMulheresPesca{
+    background-image: url('img/interna/mulheres-pesca.png') !important;
+}
+
+.BgMulheresPescaMobile{
+    background-image: url('img/interna/mulheres-pesca.png') !important;
+}
+
+.BgMulheresPescaCard{
+    background-image: url('img/interna/mulheres-pesca-card.png') !important;
+}
+
+.BgFormacaoPessoas{
+    background-image: url('img/interna/formacao-pessoas.png') !important;
+}
+
+.BgFormacaoPessoasMobile{
+    background-image: url('img/interna/formacao-pessoas.png') !important;
+}
+
+.BgFormacaoPessoasCard{
+    background-image: url('img/interna/formacao-pessoas-card.png') !important;
+}
+
+.BgConscientizacaoAmbiental{
+    background-image: url('img/interna/conscientizacao-ambiental.png') !important;
+}
+
+.BgConscientizacaoAmbientalMobile{
+    background-image: url('img/interna/conscientizacao-ambiental.png') !important;
+}
+
+.BgConscientizacaoAmbientalCard{
+    background-image: url('img/interna/conscientizacao-ambiental-card.png') !important;
+}
+
+.BgConhecimentoTradicional{
+    background-image: url('img/interna/conhecimento-tradicional.png') !important;
+}
+
+.BgConhecimentoTradicionalMobile{
+    background-image: url('img/interna/conhecimento-tradicional.png') !important;
+}
+
+.BgConhecimentoTradicionalCard{
+    background-image: url('img/interna/conhecimento-tradicional-card.png') !important;
+}
+
+.BgEspeciesInvasoras{
+    background-image: url('img/interna/especies-invasoras.png') !important;
+}
+
+.BgEspeciesInvasorasMobile{
+    background-image: url('img/interna/especies-invasoras.png') !important;
+}
+
+.BgEspeciesInvasorasCard{
+    background-image: url('img/interna/especies-invasoras-card.png') !important;
+}
+
+.BgTeiaTrofica{
+    background-image: url('img/interna/teia-trofica.png') !important;
+}
+
+.BgTeiaTroficaMobile{
+    background-image: url('img/interna/teia-trofica.png') !important;
+}
+
+.BgTeiaTroficaCard{
+    background-image: url('img/interna/teia-trofica-card.png') !important;
+}
+
+.BgMovimentosRotas{
+    background-image: url('img/interna/movimentos-rotas.png') !important;
+}
+
+.BgMovimentosRotasMobile{
+    background-image: url('img/interna/movimentos-rotas.png') !important;
+}
+
+.BgMovimentosRotasCard{
+    background-image: url('img/interna/movimentos-rotas-card.png') !important;
+}
+
+.BgTamanhoPopulacional{
+    background-image: url('img/interna/tamanho-populacional.png') !important;
+}
+
+.BgTamanhoPopulacionalMobile{
+    background-image: url('img/interna/tamanho-populacional.png') !important;
+}
+
+.BgTamanhoPopulacionalCard{
+    background-image: url('img/interna/tamanho-populacional-card.png') !important;
+}
+
+.BgAcoesVoltadas{
+    background-image: url('img/interna/acoes-voltadas.png') !important;
+}
+
+.BgAcoesVoltadasMobile{
+    background-image: url('img/interna/acoes-voltadas.png') !important;
+}
+
+.BgAcoesVoltadasCard{
+    background-image: url('img/interna/acoes-voltadas-card.png') !important;
+}
+
+.BgAcoesVoltadasGoverno{
+    background-image: url('img/interna/acoes-voltadas-governo.png') !important;
+}
+
+.BgAcoesVoltadasGovernoMobile{
+    background-image: url('img/interna/acoes-voltadas-governo.png') !important;
+}
+
+.BgAcoesVoltadasGovernoCard{
+    background-image: url('img/interna/acoes-voltadas-governo-card.png') !important;
+}
+
+.BgSistematizacao{
+    background-image: url('img/interna/sistematizacao.png') !important;
+}
+
+.BgSistematizacaoMobile{
+    background-image: url('img/interna/sistematizacao.png') !important;
+}
+
+.BgSistematizacaoCard{
+    background-image: url('img/interna/sistematizacao-card.png') !important;
+}
+
+.BgPoluentesContaminantes{
+    background-image: url('img/interna/poluentes.png') !important;
+}
+
+.BgPoluentesContaminantesMobile{
+    background-image: url('img/interna/poluentes.png') !important;
+}
+
+.BgPoluentesContaminantesCard{
+    background-image: url('img/interna/poluentes-card.png') !important;
+}
+
+.BgImpactos{
+    background-image: url('img/interna/impactos.png') !important;
+}
+
+.BgImpactosMobile{
+    background-image: url('img/interna/impactos-mobile.png') !important;
+}
+
+.BgImpactosCard{
+    background-image: url('img/interna/impactos-card.png') !important;
+}
+
+.BgParasitos{
+    background-image: url('img/interna/parasitos.png') !important;
+}
+
+.BgParasitosMobile{
+    background-image: url('img/interna/parasitos-mobile.png') !important;
+}
+
+.BgParasitosCard{
+    background-image: url('img/interna/parasitos-card.png') !important;
+}
+
 #background .bg-2{
     background-image: none;
 }
@@ -1478,6 +1706,14 @@ html.lenis, html.lenis body {
     font-size: 50px;
     font-weight: 500;
     color: #183038;
+}
+
+#background .titulos-banco-tamanho{
+    width: 800px;
+}
+
+#background .titulos-banco-movimentos{
+    width: 600px;
 }
 
 #background .titulos-texto{
@@ -1607,6 +1843,16 @@ html.lenis, html.lenis body {
     border-radius: 100%;
 }
 
+#topico .topico-div-corpo-texto-marker-2{
+    float: left;
+    margin-right: 14px;
+    width: 4px;
+    height: 4px;
+    background: transparent;
+    border: 1px solid #183038;
+    border-radius: 100%;
+}
+
 #topico .topico-div-corpo-texto-marker-marker{
     position: relative;
     top: 0;
@@ -1616,6 +1862,17 @@ html.lenis, html.lenis body {
     background: transparent;
     border: 1px solid #183038;
     border-radius: 100%;
+}
+
+#topico .topico-div-corpo-texto-marker-marker-2{
+    position: relative;
+    top: 0;
+    left: 14px;
+    width: 4px;
+    height: 4px;
+    background: #183038;
+    border: 1px solid #183038;
+    border-radius: 0%;
 }
 
 #topico .topico-entrega{
@@ -1667,10 +1924,16 @@ html.lenis, html.lenis body {
 }
 
 #topico .topico-entrega-topo{
-    float: left;
+    float: none;
     width: 100%;
     font-size: 18px;
     color: #183038;
+    display: inline;
+    line-height: 24px;
+}
+
+.topico-entrega-corpo:hover .topico-entrega-topo-up{
+    background-color: #CEF077 ;
 }
 
 #topico .topico-abre-fecha-laranja{
@@ -1876,7 +2139,21 @@ html.lenis, html.lenis body {
 
     #background .titulos-banco{
         font-size: 34px;
-        width: 330px;
+        width: 80%;
+    }
+
+    #background .titulos-banco-series{
+        width: 220px
+    }
+
+    #background .titulos-banco-tamanho{
+        font-size: 24px;
+        width: 100%;
+    }
+
+    #background .titulos-banco-movimentos{
+        font-size: 26px;
+        width: 100%;
     }
 
     #background .titulos-texto{
