@@ -2303,4 +2303,8 @@ html.lenis, html.lenis body {
         display: block;
         height: 250px !important;
     }
+
+    #eixo .eixo-div-img{
+        height: 100px;
+    }
 }
