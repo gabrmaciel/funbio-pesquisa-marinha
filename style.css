@@ -2302,10 +2302,10 @@ html.lenis, html.lenis body {
     }
 
     #eixo .eixo-ecossistemas-icon-div{
-        width: 28px;
-        height: 28px;
-        margin-right: 5px;
-        background-size: 28px 28px;
+        width: 24px;
+        height: 24px;
+        margin-right: 2.5px;
+        background-size: 24px 24px;
     }
 
     #eixo .eixo-div-nome-ecologia{
@@ -2339,6 +2339,12 @@ html.lenis, html.lenis body {
 
     #background .titulos-texto{
         background-color: #FFF;
+    }
+
+    #eixo .eixo-div-sociedade{
+        min-height: 100px;
+        height: 100px;
+        font-size: 18px;
     }
 }
 
