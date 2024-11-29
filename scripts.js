@@ -196,6 +196,10 @@ function FiltrarNumero(){
             }
         }
 
+        contadorFiltrar = parseInt(contadorFiltrar) + 1;
+
+        $(".eixo-result-filtrar").append("<a href=\"metodologias.html\"><div class=\"eixo-div eixo-div-saude\" id=\"eixo-"+ contadorFiltrar +"\"><div class=\"eixo-div-img BgMetodologiasCard\"></div><div class=\"eixo-div-nome eixo-div-nome-saude\" style=\"opacity:0\">SAÚDE ÚNICA</div><div class=\"eixo-div-sociedade eixo-div-sociedade3\">Metodologias usadas</div><div class=\"eixo-div-biodiversidade\">E biodiversidade através de atividades de educação ambiental</div><div class=\"eixo-ecossistemas\"><div class=\"eixo-ecossistemas-titulo\"><span class=\"eixo-ecossistemas-titulo-eco eixo-ecossistemas-titulo-eco-saude\">ECOSSISTEMAS</span><div class=\"eixo-ecossistemas-titulo-linha\">&nbsp;</div><div class=\"eixo-ecossistemas-icon\"><div class=\"eixo-ecossistemas-icon-div eco-F\"><div class=\"eixo-ecossistemas-icon-div-flag\"><div class=\"eixo-ecossistemas-icon-div-flag-triangle\"></div>MAR ABERTO</div></div><div class=\"eixo-ecossistemas-icon-div eco-G\"><div class=\"eixo-ecossistemas-icon-div-flag\"><div class=\"eixo-ecossistemas-icon-div-flag-triangle\"></div>CORAIS</div></div><div class=\"eixo-ecossistemas-icon-div eco-H\"><div class=\"eixo-ecossistemas-icon-div-flag\"><div class=\"eixo-ecossistemas-icon-div-flag-triangle\"></div>COSTÕES/POÇAS</div></div><div class=\"eixo-ecossistemas-icon-div eco-I\"><div class=\"eixo-ecossistemas-icon-div-flag\"><div class=\"eixo-ecossistemas-icon-div-flag-triangle\"></div>PRAIAS ARENOSAS</div></div><div class=\"eixo-ecossistemas-icon-div eco-J\"><div class=\"eixo-ecossistemas-icon-div-flag\"><div class=\"eixo-ecossistemas-icon-div-flag-triangle\"></div>MANGUEZAIS</div></div><div class=\"eixo-ecossistemas-icon-div eco-K\"><div class=\"eixo-ecossistemas-icon-div-flag\"><div class=\"eixo-ecossistemas-icon-div-flag-triangle\"></div>MANGUEZAIS</div></div><div class=\"eixo-ecossistemas-icon-div eco-L\"><div class=\"eixo-ecossistemas-icon-div-flag\"><div class=\"eixo-ecossistemas-icon-div-flag-triangle\"></div>ESTUÁRIO/RIO</div></div></div></div></div></div></a>");
+
         $("#DropAbrirFecharEixo").html("")
         if(opcoesFiltro.indexOf("A") >= 0){
             $("#DropAbrirFecharEixo").append("<div class=\"select-drop-ul\" onclick=\"FiltrarAdicionaNumeroEixo('A', 'Pesca')\">PESCA</div>")
@@ -542,6 +546,7 @@ $(document).ready(function(){
     $("#eixo-17").css("top", "0px")
     $("#eixo-18").css("top", "0px")
     $("#eixo-19").css("top", "0px")
+    $("#eixo-20").css("top", "0px")
 });
 
 function DropAbrirFechar(){
