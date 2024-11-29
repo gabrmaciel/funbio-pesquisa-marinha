@@ -1027,11 +1027,11 @@ html.lenis, html.lenis body {
     width: 100%;
     padding-top: 12px;
     padding-left: 0px;
-    font-size: 20px;
+    font-size: 19px;
     color: #FFF;
     opacity: 0.98;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1050,11 +1050,11 @@ html.lenis, html.lenis body {
     width: 100%;
     padding-top: 12px;
     padding-left: 0px;
-    font-size: 20px;
+    font-size: 19px;
     color: #FFF;
     opacity: 0.98;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
