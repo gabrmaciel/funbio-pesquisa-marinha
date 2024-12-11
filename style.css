@@ -67,7 +67,7 @@ html.lenis, html.lenis body {
 }
 
 #menu{
-    position: absolute;
+    position: fixed;
     z-index: 99;
     top: 0;
     left: 0;
@@ -1681,6 +1681,10 @@ html.lenis, html.lenis body {
 }
 
 .BgMetodologias{
+    background-image: url('img/interna/metodologias.png') !important;
+}
+
+.BgMetodologiasCard{
     background-image: url('img/interna/metodologias-card.png') !important;
 }
 
