@@ -1688,6 +1688,10 @@ html.lenis, html.lenis body {
     background-image: url('img/interna/metodologias-card.png') !important;
 }
 
+.BgMetodologiasMobile{
+    background-image: url('img/interna/metodologias.png') !important;
+}
+
 #background .bg-2{
     background-image: none;
 }
