@@ -631,7 +631,7 @@ html.lenis, html.lenis body {
     color: #183038;
     line-height: 18px;
     position: relative;
-    top: 66px;
+    top: 50px;
 }
 
 
@@ -1707,8 +1707,16 @@ html.lenis, html.lenis body {
     width: 510px;
 }
 
+#background .titulos4{
+    width: 650px;
+}
+
 #background .titulos7{
     width: 460px;
+}
+
+#background .titulos8{
+    width: 420px;
 }
 
 #background .titulos9{
@@ -1722,6 +1730,11 @@ html.lenis, html.lenis body {
 #background .titulos14{
     width: 580px;
 }
+
+#background .titulos15{
+    width: 480px;
+}
+
 
 #background .titulos16{
     width: 740px;
@@ -1961,6 +1974,7 @@ html.lenis, html.lenis body {
     text-decoration: underline
 }
 
+
 .topico-entrega-topo-up{
     text-transform: uppercase;
 }
@@ -1997,7 +2011,7 @@ html.lenis, html.lenis body {
     line-height: 24px;
 }
 
-.topico-entrega-corpo:hover .topico-entrega-topo-up{
+.topico-entrega-corpo:hover .topico-entrega-topo{
     background-color: #CEF077 ;
 }
 
