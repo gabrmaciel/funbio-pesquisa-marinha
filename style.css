@@ -1270,7 +1270,7 @@ html.lenis, html.lenis body {
     width: 33.33%;
     display: flex;
     justify-content: center;
-    margin-top: -156px
+    margin-top: -57px
 }
 
 #rodape .rodape-alga img{
@@ -1291,6 +1291,16 @@ html.lenis, html.lenis body {
     padding-left: 80px;
 }
 
+#rodape .rodape-logo span{
+    float: left;
+    text-align: left;
+    color: #183038;
+    font-family:'Open Sans';
+    font-size: 13px;
+    padding-left: 0px;
+}
+
+
 #rodape .rodape-site-datadot,.rodape-site-datadot a{
     float: right;
     text-align: right;
@@ -1298,7 +1308,7 @@ html.lenis, html.lenis body {
     font-family:'Open Sans';
     font-size: 13px;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 166px;
 }
 
 #rodape .rodape-site-datadot a{
@@ -1732,7 +1742,7 @@ html.lenis, html.lenis body {
 }
 
 #background .titulos15{
-    width: 480px;
+    width: 410px;
 }
 
 
@@ -1962,7 +1972,7 @@ html.lenis, html.lenis body {
 #topico .topico-entrega-corpo{
     float: left;
     width: 70%;
-    height: 120px;
+    height: 145px;
     overflow: hidden;
 }
 
@@ -2118,7 +2128,7 @@ html.lenis, html.lenis body {
 
     #rodape .rodape-alga{
         margin-left: 10%;
-        margin-top: -127px;
+        padding-bottom: 40px
     }
 
     #rodape .rodape-site-mobile{
@@ -2154,6 +2164,10 @@ html.lenis, html.lenis body {
     #background .titulos13{
         width: 570px;
     }
+
+    #rodape .rodape-logo img{
+        margin-top: -64px;
+    }
 }
 
 @media only screen and (max-width: 1020px) {
@@ -2161,6 +2175,9 @@ html.lenis, html.lenis body {
         width: calc(33.33% - 15px);
     }
 
+    #rodape .rodape-logo img{
+        margin-top: -80px;
+    }
     
 }
 
