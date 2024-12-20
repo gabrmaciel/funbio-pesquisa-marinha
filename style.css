@@ -2352,6 +2352,11 @@ html.lenis, html.lenis body {
         width: calc(33.33% - 40px);
         margin-top: 44px;
     }
+
+    #topico .topico-div-corpo-texto span{
+        width: calc(100% - 20px);
+        margin-left: 10px;
+    }
    
 }
 
