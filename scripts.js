@@ -556,7 +556,7 @@ function DropAbrirFechar(){
 }
 
 function whatsapp(){
-    window.open("https://web.whatsapp.com/send?text=%20https://funbio.org.br/%3Futm_source%3Dwhatsapp-network%26utm_medium%3Dcompartilhar_conteudo%26utm_campaign%3Dorganica%26utm_content%3Dgeral", "", "width=640,height=480")
+    window.open("https://web.whatsapp.com/send?text=%20https://funbio.org.br/%3Futm_source%3Dwhatsapp-network%26utm_medium%3Dcompartilhar_conteudo%26utm_campaign%3Dorganica%26utm_content%3Dgeral", "", "width=800,height=600")
 }
 
 function abreANovelReport(){
