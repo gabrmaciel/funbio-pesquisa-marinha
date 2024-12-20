@@ -509,7 +509,8 @@ html.lenis, html.lenis body {
 #header .compartilhar-popup-titulo{
     float: left;
     width: 100%;
-    padding-top: 35px;
+    padding-top: 0px;
+    padding-bottom: 20px;
     font-size: 20px;
     color: #CEF077;
 }
@@ -1981,7 +1982,12 @@ html.lenis, html.lenis body {
     width: 100%;
     color: #183038;
     margin-bottom: 8px;
-    text-decoration: underline
+    text-decoration: underline;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
