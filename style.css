@@ -1254,7 +1254,7 @@ html.lenis, html.lenis body {
 }
 
 #rodape .rodape-logo{
-    float: left;
+    float: right;
     width: 33.33%;
 
 }
@@ -1269,7 +1269,7 @@ html.lenis, html.lenis body {
     float: left;
     width: 33.33%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: -57px
 }
 
@@ -1279,19 +1279,10 @@ html.lenis, html.lenis body {
 
 #rodape .rodape-site{
     float: left;
-    width: 33.33%;
+    width: 100%;
 }
 
 #rodape .rodape-site span{
-    float: left;
-    text-align: right;
-    color: #183038;
-    font-family:'Open Sans';
-    font-size: 13px;
-    padding-left: 80px;
-}
-
-#rodape .rodape-logo span{
     float: left;
     text-align: left;
     color: #183038;
@@ -1300,15 +1291,24 @@ html.lenis, html.lenis body {
     padding-left: 0px;
 }
 
+#rodape .rodape-logo span{
+    float: left;
+    text-align: left;
+    color: #183038;
+    font-family:'Open Sans';
+    font-size: 11px;
+    padding-left: 0px;
+}
+
 
 #rodape .rodape-site-datadot,.rodape-site-datadot a{
-    float: right;
+    float: left;
     text-align: right;
     color: #183038;
     font-family:'Open Sans';
     font-size: 13px;
     font-weight: 700;
-    margin-top: 166px;
+    margin-top: 100px;
 }
 
 #rodape .rodape-site-datadot a{
@@ -2113,32 +2113,12 @@ html.lenis, html.lenis body {
 }
 
 @media only screen and (max-width: 1240px) {
-    #rodape{
-        margin-bottom: 0px;
-    }
-
-    #rodape .rodape-logo{
-        margin-left: 10%;
-        margin-top: 0px;
-    }
-
-    #rodape .rodape-site{
-        display: none;
-    }
-
-    #rodape .rodape-alga{
-        margin-left: 10%;
-        padding-bottom: 40px
-    }
-
-    #rodape .rodape-site-mobile{
-        display: block;
-        margin-top: -80px;
-        margin-bottom: 120px
-    }
+ 
 }
 
 @media only screen and (max-width: 1200px) {
+
+    
 
     #menu .sub-menu{
         left: 70%;
@@ -2175,8 +2155,41 @@ html.lenis, html.lenis body {
         width: calc(33.33% - 15px);
     }
 
-    #rodape .rodape-logo img{
+    #rodape{
+        margin-bottom: 0px;
+    }
+
+    #rodape .rodape-logo{
+        margin-left: 10%;
+        margin-top: 25px;
+    }
+
+    #rodape .rodape-site{
+        display: none;
+    }
+
+    #rodape .rodape-alga{
+        padding-bottom: 40px
+    }
+
+    #rodape .rodape-site-mobile{
+        display: block;
         margin-top: -80px;
+        margin-bottom: 120px
+    }
+
+    #rodape .rodape-site-datadot a{
+        margin-left: 0px;
+    }
+
+    #rodape .rodape-logo img{
+        width: 100%;
+        height: auto;
+        margin-top: -80px;
+    }
+
+    #rodape .rodape-alga img{
+        height: 200px;
     }
     
 }
@@ -2224,29 +2237,21 @@ html.lenis, html.lenis body {
         top: 0px;
     }
 
-    #rodape .rodape-logo{
-        margin-left: 10%;
-        width: calc(40% - 30px);
-        margin-right: 30px;
-        height: auto;
-    }
-
+    
+/*
     #rodape .rodape-logo img{
         width: 100%;
         height: auto;
-    }
-
+    } */
     #rodape .rodape-alga{
-        margin-left: 30px;
-        width: calc(40% - 30px);
-        margin-right: 10%;
-    }
-
+        width: 40%;
+    } 
+/* 
     #rodape .rodape-alga img{
         height: auto;
         width: 100%;
         margin-top: 0px;
-    }
+    } */
 
     #rodape .rodape-site-mobile{
         margin-bottom: 120px
